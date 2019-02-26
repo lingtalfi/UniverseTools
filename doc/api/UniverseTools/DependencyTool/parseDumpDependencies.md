@@ -16,7 +16,7 @@ Description
 ================
 
 
-public static [DependencyTool::parseDumpDependencies](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/UniverseTools/DependencyTool/parseDumpDependencies.md)(string $planetDir, $br = <br>) : string
+public static [DependencyTool::parseDumpDependencies](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/UniverseTools/DependencyTool/parseDumpDependencies.md)(string $planetDir, $br = &lt;br&gt;) : string
 
 
 

@@ -25,7 +25,7 @@ Class synopsis
 class <span class="pl-k">DependencyTool</span>  {
 
 - Methods
-    - public static [parseDumpDependencies](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/UniverseTools/DependencyTool/parseDumpDependencies.md)(string $planetDir, $br = <br>) : string
+    - public static [parseDumpDependencies](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/UniverseTools/DependencyTool/parseDumpDependencies.md)(string $planetDir, $br = &lt;br&gt;) : string
     - public static [getDependencyList](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/UniverseTools/DependencyTool/getDependencyList.md)(?$planetDir) : array
     - public static [getDependencyHomeUrl](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/UniverseTools/DependencyTool/getDependencyHomeUrl.md)(array $dependencyItem) : string
 
