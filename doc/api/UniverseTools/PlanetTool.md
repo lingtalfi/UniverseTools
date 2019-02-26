@@ -16,6 +16,8 @@ Introduction
 
 The PlanetTool class.
 
+Contains methods related to a planet, like listing the [bsr-0](https://github.com/lingtalfi/BumbleBee/blob/master/Autoload/convention.bsr0.eng.md) classes found in a planet for instance.
+
 
 
 Class synopsis

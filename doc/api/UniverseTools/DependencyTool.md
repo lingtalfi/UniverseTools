@@ -15,6 +15,9 @@ Introduction
 ============
 
 The DependencyTool class.
+This class helps resolving dependencies related problem.
+
+See more about universe dependencies in the [universe dependencies document](https://github.com/lingtalfi/TheScientist/blob/master/universe-dependencies-2019.md).
 
 
 

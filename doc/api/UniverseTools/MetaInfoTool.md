@@ -18,7 +18,7 @@ The MetaInfoTool class.
 
 A planet should have a meta-info.byml file at the root of its directory.
 
-The meta-info.byml contains various information about the planet, especially the current version.
+The meta-info.byml contains various information about the planet, especially the current version of the planet.
 
 
 

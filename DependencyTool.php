@@ -11,6 +11,11 @@ use UniverseTools\Exception\UniverseToolsException;
 
 /**
  * The DependencyTool class.
+ * This class helps resolving dependencies related problem.
+ *
+ * See more about universe dependencies in the @page(universe dependencies document).
+ *
+ *
  */
 class DependencyTool
 {

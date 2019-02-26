@@ -8,6 +8,9 @@ use UniverseTools\Exception\UniverseToolsException;
 
 /**
  * The PlanetTool class.
+ *
+ * Contains methods related to a planet, like listing the @kw(bsr-0) classes found in a planet for instance.
+ *
  */
 class PlanetTool
 {
