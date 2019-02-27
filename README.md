@@ -36,6 +36,11 @@ Summary
 History Log
 ==============
 
+- 1.6.0 -- 2019-02-27
+
+    - undo last commit
+    - add DependencyTool::getDependencyItem method
+    
 - 1.5.0 -- 2019-02-27
 
     - update DependencyTool::getDependencyList, the returned array now contains the post_install directives
