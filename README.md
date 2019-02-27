@@ -36,6 +36,10 @@ Summary
 History Log
 ==============
 
+- 1.7.0 -- 2019-02-27
+
+    - add PlanetTool::getPlanetDirs method
+    
 - 1.6.0 -- 2019-02-27
 
     - undo last commit
