@@ -55,3 +55,8 @@ Methods
 Location
 =============
 UniverseTools\DependencyTool
+
+
+SeeAlso
+==============
+Next class: [UniverseToolsException](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/UniverseTools/Exception/UniverseToolsException.md)<br>

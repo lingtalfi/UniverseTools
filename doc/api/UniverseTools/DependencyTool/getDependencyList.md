@@ -95,3 +95,6 @@ See Also
 ================
 
 The [DependencyTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/UniverseTools/DependencyTool.md) class.
+
+Previous method: [getDependencyItem](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/UniverseTools/DependencyTool/getDependencyItem.md)<br>Next method: [getDependencyHomeUrl](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/UniverseTools/DependencyTool/getDependencyHomeUrl.md)<br>
+

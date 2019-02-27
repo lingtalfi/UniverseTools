@@ -48,3 +48,8 @@ Methods
 Location
 =============
 UniverseTools\PlanetTool
+
+
+SeeAlso
+==============
+Previous class: [MetaInfoTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/UniverseTools/MetaInfoTool.md)<br>
