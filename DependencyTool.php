@@ -174,7 +174,7 @@ class DependencyTool
      * The array is a list of dependencyItem, each of which being an array with 2 items:
      *
      * - 0: the galaxy identifier/ dependency system
-     * - 1: the dependency identifier (name or url, ...).
+     * - 1: the dependency identifier (name or url, ...), aka packageImportName.
      *
      *
      *
