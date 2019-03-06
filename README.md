@@ -14,7 +14,7 @@ Install
 ==========
 Using the [uni](https://github.com/lingtalfi/universe-naive-importer) command.
 ```bash
-uni import UniverseTools
+uni import Ling/UniverseTools
 ```
 
 Or just download it and place it where you want otherwise.
@@ -36,6 +36,10 @@ Summary
 History Log
 ==============
 
+- 1.9.0 -- 2019-03-06
+
+    - update tools to be compliant with new bsr-1 system
+    
 - 1.8.0 -- 2019-03-05
 
     - fix DependencyTool::parseDumpDependencies parsing scripts when it should not

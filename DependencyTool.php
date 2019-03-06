@@ -1,12 +1,12 @@
 <?php
 
-namespace UniverseTools;
+namespace Ling\UniverseTools;
 
 
-use BabyYaml\BabyYamlUtil;
-use DirScanner\YorgDirScannerTool;
-use TokenFun\TokenFinder\Tool\TokenFinderTool;
-use UniverseTools\Exception\UniverseToolsException;
+use Ling\BabyYaml\BabyYamlUtil;
+use Ling\DirScanner\YorgDirScannerTool;
+use Ling\TokenFun\TokenFinder\Tool\TokenFinderTool;
+use Ling\UniverseTools\Exception\UniverseToolsException;
 
 
 /**
@@ -228,14 +228,14 @@ class DependencyTool
      *      "ling",
      *      "Bat",
      * ];
-     * az(DependencyTool::getDependencyHomeUrl($item)); // string(71) "https://github.com/karayabin/universe-snapshot/tree/master/universe/Bat"
+     * az(DependencyTool::getDependencyHomeUrl($item)); // string(71) "https://github.com/karayabin/universe-snapshot/tree/master/universe/Ling/Bat"
      * ```
      *
      *
      * Will output:
      *
      * ```html
-     * string(71) "https://github.com/karayabin/universe-snapshot/tree/master/universe/Bat"
+     * string(71) "https://github.com/karayabin/universe-snapshot/tree/master/universe/Ling/Bat"
      * ```
      *
      *
@@ -253,7 +253,7 @@ class DependencyTool
 
         switch ($dependencySystem) {
             case "ling":
-                return "https://github.com/karayabin/universe-snapshot/tree/master/universe/$target";
+                return "https://github.com/karayabin/universe-snapshot/tree/master/universe/Ling/$target";
                 break;
             case "git":
                 return $target;

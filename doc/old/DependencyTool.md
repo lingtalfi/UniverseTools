@@ -37,14 +37,14 @@ $item = [
     "Bat",
     "*",
 ];
-az(DependencyTool::getDependencyHomeUrl($item)); // string(71) "https://github.com/karayabin/universe-snapshot/tree/master/universe/Bat"
+az(DependencyTool::getDependencyHomeUrl($item)); // string(71) "https://github.com/karayabin/universe-snapshot/tree/master/universe/Ling/Bat"
 ```
 
 
 Will output:
 
 ```html
-string(71) "https://github.com/karayabin/universe-snapshot/tree/master/universe/Bat"
+string(71) "https://github.com/karayabin/universe-snapshot/tree/master/universe/Ling/Bat"
 ```
 
 

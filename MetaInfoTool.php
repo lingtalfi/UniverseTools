@@ -1,9 +1,9 @@
 <?php
 
-namespace UniverseTools;
+namespace Ling\UniverseTools;
 
 
-use BabyYaml\BabyYamlUtil;
+use Ling\BabyYaml\BabyYamlUtil;
 
 /**
  * The MetaInfoTool class.

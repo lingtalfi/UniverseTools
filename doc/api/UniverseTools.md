@@ -23,6 +23,6 @@ Table of contents
 
 Dependencies
 ============
-- [Universe: BabyYaml](https://github.com/karayabin/universe-snapshot/tree/master/universe/BabyYaml)
+- [Universe: BabyYaml](https://github.com/karayabin/universe-snapshot/tree/master/universe/Ling/BabyYaml)
 
 

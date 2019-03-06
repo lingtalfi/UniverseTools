@@ -39,14 +39,14 @@ $item = [
 "ling",
 "Bat",
 ];
-az(DependencyTool::getDependencyHomeUrl($item)); // string(71) "https://github.com/karayabin/universe-snapshot/tree/master/universe/Bat"
+az(DependencyTool::getDependencyHomeUrl($item)); // string(71) "https://github.com/karayabin/universe-snapshot/tree/master/universe/Ling/Bat"
 ```
 
 
 Will output:
 
 ```html
-string(71) "https://github.com/karayabin/universe-snapshot/tree/master/universe/Bat"
+string(71) "https://github.com/karayabin/universe-snapshot/tree/master/universe/Ling/Bat"
 ```
 
 See also [the DependencyTool::getDependencyList method](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/UniverseTools/DependencyTool/getDependencyList.md)

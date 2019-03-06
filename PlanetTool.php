@@ -1,10 +1,10 @@
 <?php
 
-namespace UniverseTools;
+namespace Ling\UniverseTools;
 
 
-use DirScanner\YorgDirScannerTool;
-use UniverseTools\Exception\UniverseToolsException;
+use Ling\DirScanner\YorgDirScannerTool;
+use Ling\UniverseTools\Exception\UniverseToolsException;
 
 /**
  * The PlanetTool class.
@@ -90,7 +90,50 @@ class PlanetTool
         if (false === is_dir($universeDir)) {
             throw new UniverseToolsException("Dir not found: $universeDir");
         }
-        return YorgDirScannerTool::getDirs($universeDir); // well for now, all directories are planets...
+        $ret = [];
+        $galaxies = YorgDirScannerTool::getDirs($universeDir);
+        foreach ($galaxies as $galaxy) {
+            $ret = array_merge($ret, YorgDirScannerTool::getDirs($galaxy));
+        }
+        return $ret;
+    }
+
+
+    /**
+     * Returns an array containing the galaxy name and the short planet name extracted from the given $planetDir.
+     * Returns false if the given $planetDir is not valid.
+     *
+     * @param string $planetDir
+     * @return array|false
+     */
+    public static function getGalaxyNamePlanetNameByDir(string $planetDir)
+    {
+        if (false !== strpos($planetDir, "/")) {
+            return [
+                basename(dirname($planetDir)),
+                basename($planetDir),
+            ];
+        }
+        return false;
+    }
+
+
+    /**
+     * Returns an array containing the galaxy name and the short planet name extracted from the given $planetName.
+     * Returns false if the given $planetName is invalid.
+     *
+     *
+     * @param string $longPlanetName
+     * The long planet name (galaxy/planetShortName).
+     * @return array|false
+     */
+    public static function getGalaxyNamePlanetNameByPlanetName(string $longPlanetName)
+    {
+        $p = explode("/", $longPlanetName);
+        if (2 === count($p)) {
+            return $p;
+        }
+        return false;
     }
 
 }

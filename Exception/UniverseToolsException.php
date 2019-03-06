@@ -1,7 +1,7 @@
 <?php
 
 
-namespace UniverseTools\Exception;
+namespace Ling\UniverseTools\Exception;
 
 
 /**
