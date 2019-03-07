@@ -82,8 +82,8 @@ class DependencyTool
                         $useStatements = TokenFinderTool::getUseDependencies($tokens);
 
                         // filtering out internal use statements (statements referencing a class inside the planet being parsed)
-                        $useStatements = array_filter($useStatements, function ($v) use ($planetName) {
-                            if (0 === strpos($v, $planetName . "\\")) {
+                        $useStatements = array_filter($useStatements, function ($v) use ($planetName, $galaxy) {
+                            if (0 === strpos($v, $galaxy . "\\" . $planetName . "\\")) {
                                 return false;
                             }
                             return true;

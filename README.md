@@ -36,6 +36,10 @@ Summary
 History Log
 ==============
 
+- 1.10.1 -- 2019-03-07
+
+    - fix DependencyTool::parseDumpDependencies returning the current planet as a dependency
+
 - 1.10.0 -- 2019-03-07
 
     - update DependencyTool::parseDumpDependencies, now returns the dependency.byml content as a string
@@ -44,7 +48,7 @@ History Log
 - 1.9.0 -- 2019-03-06
 
     - update tools to be compliant with new bsr-1 system
-    
+
 - 1.8.0 -- 2019-03-05
 
     - fix DependencyTool::parseDumpDependencies parsing scripts when it should not
