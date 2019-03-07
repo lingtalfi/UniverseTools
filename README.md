@@ -25,7 +25,7 @@ Or just download it and place it where you want otherwise.
 
 Summary
 =======
-- [UniverseTools api](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/UniverseTools.md) (generated with [DocTools](https://github.com/lingtalfi/DocTools))
+- [UniverseTools api](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools.md) (generated with [DocTools](https://github.com/lingtalfi/DocTools))
 
 
 
