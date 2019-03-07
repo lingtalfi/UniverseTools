@@ -1,5 +1,5 @@
 [Back to the UniverseTools api](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/UniverseTools.md)<br>
-[Back to the UniverseTools\MetaInfoTool class](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/UniverseTools/MetaInfoTool.md)
+[Back to the Ling\UniverseTools\MetaInfoTool class](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/MetaInfoTool.md)
 
 
 MetaInfoTool::parseInfo
@@ -16,7 +16,7 @@ Description
 ================
 
 
-public static [MetaInfoTool::parseInfo](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/UniverseTools/MetaInfoTool/parseInfo.md)(string $planetDir) : array
+public static [MetaInfoTool::parseInfo](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/MetaInfoTool/parseInfo.md)(string $planetDir) : array
 
 
 
@@ -51,7 +51,7 @@ Returns array.
 See Also
 ================
 
-The [MetaInfoTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/UniverseTools/MetaInfoTool.md) class.
+The [MetaInfoTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/MetaInfoTool.md) class.
 
 
 

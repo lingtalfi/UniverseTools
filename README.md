@@ -36,6 +36,11 @@ Summary
 History Log
 ==============
 
+- 1.10.0 -- 2019-03-07
+
+    - update DependencyTool::parseDumpDependencies, now returns the dependency.byml content as a string
+    - fix PlanetTool::getClassNames to read bsr-1 classes
+
 - 1.9.0 -- 2019-03-06
 
     - update tools to be compliant with new bsr-1 system
