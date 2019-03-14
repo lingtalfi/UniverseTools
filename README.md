@@ -36,6 +36,10 @@ Summary
 History Log
 ==============
 
+- 1.11.2 -- 2019-03-14
+
+    - fix documentation missing inserts
+
 - 1.11.1 -- 2019-03-14
 
     - fix PlanetTool::getClassNames parsing scripts as classes
