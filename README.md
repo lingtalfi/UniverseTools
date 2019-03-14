@@ -36,6 +36,10 @@ Summary
 History Log
 ==============
 
+- 1.11.3 -- 2019-03-14
+
+    - fix documentation missing inserts (forgot galaxy prefix)
+
 - 1.11.2 -- 2019-03-14
 
     - fix documentation missing inserts
