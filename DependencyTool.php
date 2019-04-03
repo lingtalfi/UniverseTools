@@ -109,6 +109,12 @@ class DependencyTool
             $galaxies = [];
             foreach ($allUseStatements as $statement) {
                 $parts = explode('\\', $statement);
+
+                if (1 === count($parts)) { // assuming it's a trait
+                    continue;
+                }
+
+
                 $galaxy = $parts[0];
                 $planet = $parts[1];
                 if (false === array_key_exists($galaxy, $galaxies)) {
@@ -287,8 +293,8 @@ class DependencyTool
      * Writes the dependencies.byml file at the root of the given $planetDir.
      *
      * @param string $planetDir
-     * @throws UniverseToolsException
      * @return bool
+     * @throws UniverseToolsException
      */
     public static function writeDependencies(string $planetDir)
     {
