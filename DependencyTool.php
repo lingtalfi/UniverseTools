@@ -35,12 +35,16 @@ class DependencyTool
      *
      *
      * @param string $planetDir . The directory path of the planet to scan.
+     * @param array $conf
+     * A reference to the configuration array created, which has the following structure:
+     * - dependencies: array of galaxyName => planets (list of planet names)
+     * - post_install: empty array
      *
      *
      * @return string
      * @throws UniverseToolsException
      */
-    public static function parseDumpDependencies(string $planetDir)
+    public static function parseDumpDependencies(string $planetDir, array &$conf = [])
     {
         if (false === is_dir($planetDir)) {
             throw new UniverseToolsException("Dir not found: $planetDir");
