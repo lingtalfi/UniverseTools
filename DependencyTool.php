@@ -279,7 +279,7 @@ class DependencyTool
 
         switch ($dependencySystem) {
             case "Ling":
-                return "https://github.com/karayabin/universe-snapshot/tree/master/universe/Ling/$target";
+                return "https://github.com/lingtalfi/$target";
                 break;
             case "git":
                 return $target;
