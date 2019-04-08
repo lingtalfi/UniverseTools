@@ -270,7 +270,8 @@ class DependencyTool
      *
      * @param array $dependencyItem
      * @return string
-     * @throws UniverseToolsException, When the dependency system is unknown to this class.
+     * @throws UniverseToolsException
+     * When the dependency system is unknown to this class.
      */
     public static function getDependencyHomeUrl(array $dependencyItem)
     {
