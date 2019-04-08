@@ -53,6 +53,7 @@ class DependencyTool
         }
 
         $allUseStatements = [];
+        $knownGalaxies = GalaxyTool::getKnownGalaxies();
 
 
         $pInfo = PlanetTool::getGalaxyNamePlanetNameByDir($planetDir);
@@ -119,11 +120,14 @@ class DependencyTool
 
                 $galaxy = $parts[0];
                 $planet = $parts[1];
-                if (false === array_key_exists($galaxy, $galaxies)) {
-                    $galaxies[$galaxy] = [];
-                }
-                if (false === in_array($planet, $galaxies[$galaxy], true)) {
-                    $galaxies[$galaxy][] = $planet;
+
+                if (in_array($galaxy, $knownGalaxies, true)) {
+                    if (false === array_key_exists($galaxy, $galaxies)) {
+                        $galaxies[$galaxy] = [];
+                    }
+                    if (false === in_array($planet, $galaxies[$galaxy], true)) {
+                        $galaxies[$galaxy][] = $planet;
+                    }
                 }
             }
             $conf = [
