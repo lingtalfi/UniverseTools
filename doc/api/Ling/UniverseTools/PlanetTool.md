@@ -4,7 +4,7 @@
 
 The PlanetTool class
 ================
-2019-02-26 --> 2019-04-25
+2019-02-26 --> 2019-04-29
 
 
 
@@ -56,6 +56,3 @@ Location
 Ling\UniverseTools\PlanetTool
 
 
-SeeAlso
-==============
-Previous class: [MetaInfoTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/MetaInfoTool.md)<br>
