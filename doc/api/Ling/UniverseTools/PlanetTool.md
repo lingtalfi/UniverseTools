@@ -56,3 +56,6 @@ Location
 Ling\UniverseTools\PlanetTool
 
 
+SeeAlso
+==============
+Previous class: [MetaInfoTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/MetaInfoTool.md)<br>

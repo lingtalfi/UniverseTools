@@ -82,8 +82,8 @@ class PlanetTool
 
 
                     $tokens = token_get_all(file_get_contents($absFile));
-                    $classNames = TokenFinderTool::getClassNames($tokens);
-                    if ($classNames) { // ensure that the file contains a class
+                    $_classNames = TokenFinderTool::getClassNames($tokens);
+                    if ($_classNames) { // ensure that the file contains a class
 
                         try {
 
@@ -94,6 +94,7 @@ class PlanetTool
                         }
 
                     }
+
                 }
             }
             return $classNames;

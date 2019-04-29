@@ -36,6 +36,10 @@ Summary
 History Log
 ==============
 
+- 1.16.2 -- 2019-04-29
+
+    - fix PlanetTool::getClassNames typo
+    
 - 1.16.1 -- 2019-04-29
 
     - fix DependencyTool::parseDumpDependencies parsing template starting with opening php tag as class
