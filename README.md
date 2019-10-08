@@ -36,6 +36,10 @@ Summary
 History Log
 ==============
 
+- 1.19.0 -- 2019-10-08
+
+    - add DependencyTool::parseDumpDependencies ignoreFilesStartingWith option
+    
 - 1.18.0 -- 2019-10-08
 
     - add PlanetTool::getClassNames ignoreFilesStartingWith option
