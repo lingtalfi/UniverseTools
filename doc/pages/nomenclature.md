@@ -13,7 +13,7 @@ Planet identifier
 ----------
 2020-07-09
 
-Same definition as the [universe snapshot's definition for planetIdentifier](https://github.com/karayabin/universe-snapshot#theplanetidentifier).
+Same definition as the [universe snapshot's definition for planetIdentifier](https://github.com/karayabin/universe-snapshot#the-planet-identifier).
 
 
 

@@ -37,6 +37,10 @@ Summary
 History Log
 ==============
 
+- 1.20.1 -- 2020-07-09
+
+    - fix typo
+    
 - 1.20.0 -- 2020-07-09
 
     - add PlanetTool::getTightPlanetName method
