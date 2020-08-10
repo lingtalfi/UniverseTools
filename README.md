@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2020-08-07
+2019-02-08 -> 2020-08-10
 
 
 
@@ -37,6 +37,10 @@ Summary
 History Log
 ==============
 
+- 1.21.1 -- 2020-08-10
+
+    - add link to nomenclature documentation
+    
 - 1.21.0 -- 2020-08-07
 
     - add PlanetTool::getGalaxyPlanetByClassName method
