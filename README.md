@@ -37,6 +37,10 @@ Summary
 History Log
 ==============
 
+- 1.21.2 -- 2020-11-17
+
+    - update nomenclature documentation
+    
 - 1.21.1 -- 2020-08-10
 
     - add link to nomenclature documentation
