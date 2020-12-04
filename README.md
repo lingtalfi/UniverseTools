@@ -37,6 +37,10 @@ Summary
 History Log
 ==============
 
+- 1.21.6 -- 2020-12-04
+
+    - Add lpi-deps.byml file
+
 - 1.21.5 -- 2020-12-04
 
     - update PlanetTool, add extractPlanetDotName method
