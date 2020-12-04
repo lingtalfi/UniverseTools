@@ -226,6 +226,29 @@ class PlanetTool
 
 
     /**
+     * Returns an array containing the galaxy and the planet, based on the given [planetDotName](https://github.com/karayabin/universe-snapshot#the-planet-dot-name).
+     *
+     * The array contains the following:
+     * - 0: galaxy name
+     * - 1: planet name
+     *
+     *
+     *
+     * @param string $planetDotName
+     * @return array
+     * @throws \Exception
+     */
+    public static function extractPlanetDotName(string $planetDotName): array
+    {
+        $p = explode(".", $planetDotName, 2);
+        if (2 === count($p)) {
+            return $p;
+        }
+        throw new UniverseToolsException("The given planetDotName is not valid: $planetDotName.");
+    }
+
+
+    /**
      * Returns an array containing the galaxy and planet contained in the given class name.
      * Returns false if the given class name is not valid (i.e. @page(bsr-0) compliant).
      *
