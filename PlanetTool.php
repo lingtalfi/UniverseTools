@@ -278,26 +278,50 @@ class PlanetTool
      * See more details in the @page(UniverseTools conception notes).
      *
      * @param string $planetDot
-     * @param string $extDir
+     * @param string $extPlanetDir
      * @param string $appDir
      */
-    public static function importPlanetByExternalDir(string $planetDot, string $extDir, string $appDir)
+    public static function importPlanetByExternalDir(string $planetDot, string $extPlanetDir, string $appDir)
     {
         list($galaxy, $planet) = self::extractPlanetDotName($planetDot);
-        if (false === file_exists($extDir)) {
-            throw new UniverseToolsException("External source dir not found: $extDir.");
+        if (false === file_exists($extPlanetDir)) {
+            throw new UniverseToolsException("External source dir not found: $extPlanetDir.");
         }
         if (false === file_exists($appDir)) {
             throw new UniverseToolsException("Application dir not found: $appDir.");
         }
 
         $newPlanetDir = $appDir . "/universe/$galaxy/$planet";
+        FileSystemTool::copyDir($extPlanetDir, $newPlanetDir);
 
-        FileSystemTool::copyDir($extDir, $newPlanetDir);
+        $assetsMapDir = $newPlanetDir . "/assets/map";
+        if (is_dir($assetsMapDir)) {
+            AssetsMapTool::copyAssets($assetsMapDir, $appDir);
+        }
+    }
 
+    /**
+     * Removes the given planet from the given app directory. The assets/map files are also removed.
+     *
+     * See more details in the @page(UniverseTools conception notes).
+     *
+     *
+     * @param string $planetDot
+     * @param string $appDir
+     */
+    public static function removePlanet(string $planetDot, string $appDir)
+    {
 
+        list($galaxy, $planet) = self::extractPlanetDotName($planetDot);
+        $planetDir = $appDir . "/universe/$galaxy/$planet";
+        $assetMapDir = $planetDir . "/assets/map";
 
-
+        if (is_dir($assetMapDir)) {
+            AssetsMapTool::removeAssets($assetMapDir, $appDir);
+        }
+        if (is_dir($planetDir)) {
+            FileSystemTool::remove($planetDir);
+        }
     }
 
 }

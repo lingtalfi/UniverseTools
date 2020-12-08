@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2020-12-04
+2019-02-08 -> 2020-12-08
 
 
 
@@ -27,6 +27,7 @@ Summary
 =======
 - [UniverseTools api](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools.md) (generated with [DocTools](https://github.com/lingtalfi/DocTools))
 - [Nomenclature](https://github.com/lingtalfi/UniverseTools/blob/master/doc/pages/nomenclature.md) 
+- [Conception notes](https://github.com/lingtalfi/UniverseTools/blob/master/doc/pages/conception-notes.md) 
 
 
 
@@ -37,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.21.8 -- 2020-12-08
+
+    - add PlanetTool::importPlanetByExternalDir and removePlanet methods
+  
 - 1.21.7 -- 2020-12-08
 
     - Fix lpi-deps not using natsort.

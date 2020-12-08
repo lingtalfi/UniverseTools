@@ -65,4 +65,4 @@ See the source code of [Ling\UniverseTools\DependencyTool](https://github.com/li
 
 SeeAlso
 ==============
-Next class: [UniverseToolsException](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/Exception/UniverseToolsException.md)<br>
+Previous class: [AssetsMapTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/AssetsMapTool.md)<br>Next class: [UniverseToolsException](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/Exception/UniverseToolsException.md)<br>

@@ -16,14 +16,14 @@ Description
 ================
 
 
-public static [PlanetTool::importPlanetByExternalDir](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/importPlanetByExternalDir.md)(string $planetDot, string $extDir, string $appDir) : void
+public static [PlanetTool::importPlanetByExternalDir](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/importPlanetByExternalDir.md)(string $planetDot, string $extPlanetDir, string $appDir) : void
 
 
 
 
 Imports a planet by copying an external source dir, and importing the assets/map into the app.
 
-See more details in the UniverseTools conception notes.
+See more details in the [UniverseTools conception notes](https://github.com/lingtalfi/UniverseTools/blob/master/doc/pages/conception-notes.md).
 
 
 
@@ -36,7 +36,7 @@ Parameters
 
     
 
-- extDir
+- extPlanetDir
 
     
 
@@ -67,5 +67,5 @@ See Also
 
 The [PlanetTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool.md) class.
 
-Previous method: [getGalaxyPlanetByClassName](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/getGalaxyPlanetByClassName.md)<br>
+Previous method: [getGalaxyPlanetByClassName](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/getGalaxyPlanetByClassName.md)<br>Next method: [removePlanet](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/removePlanet.md)<br>
 
