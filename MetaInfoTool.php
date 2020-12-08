@@ -58,7 +58,7 @@ class MetaInfoTool
                 $ret = $info['version'] ?? null;
             }
         }
-        return $ret;
+        return (string)$ret;
     }
 
     /**

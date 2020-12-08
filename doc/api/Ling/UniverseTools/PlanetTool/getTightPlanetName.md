@@ -49,7 +49,7 @@ Returns string.
 
 Source Code
 ===========
-See the source code for method [PlanetTool::getTightPlanetName](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L180-L183)
+See the source code for method [PlanetTool::getTightPlanetName](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L181-L184)
 
 
 See Also

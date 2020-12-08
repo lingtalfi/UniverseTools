@@ -37,6 +37,10 @@ Summary
 History Log
 ==============
 
+- 1.21.7 -- 2020-12-08
+
+    - Fix lpi-deps not using natsort.
+
 - 1.21.6 -- 2020-12-04
 
     - Add lpi-deps.byml file

@@ -3,6 +3,7 @@
 namespace Ling\UniverseTools;
 
 
+use Ling\Bat\FileSystemTool;
 use Ling\DirScanner\YorgDirScannerTool;
 use Ling\TokenFun\TokenFinder\Tool\TokenFinderTool;
 use Ling\UniverseTools\Exception\UniverseToolsException;
@@ -268,6 +269,35 @@ class PlanetTool
             ];
         }
         return false;
+    }
+
+
+    /**
+     * Imports a planet by copying an external source dir, and importing the assets/map into the app.
+     *
+     * See more details in the @page(UniverseTools conception notes).
+     *
+     * @param string $planetDot
+     * @param string $extDir
+     * @param string $appDir
+     */
+    public static function importPlanetByExternalDir(string $planetDot, string $extDir, string $appDir)
+    {
+        list($galaxy, $planet) = self::extractPlanetDotName($planetDot);
+        if (false === file_exists($extDir)) {
+            throw new UniverseToolsException("External source dir not found: $extDir.");
+        }
+        if (false === file_exists($appDir)) {
+            throw new UniverseToolsException("Application dir not found: $appDir.");
+        }
+
+        $newPlanetDir = $appDir . "/universe/$galaxy/$planet";
+
+        FileSystemTool::copyDir($extDir, $newPlanetDir);
+
+
+
+
     }
 
 }
