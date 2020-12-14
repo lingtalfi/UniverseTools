@@ -44,9 +44,31 @@ class MetaInfoTool
 
 
     /**
+     * Returns the current version number of the planet, from the metaInfo url.
+     *
+     * The $rawMetaInfoUrl is the url to the meta-info.byml file.
+     *
+     *
+     * @param $rawMetaInfoUrl
+     * @return string|null
+     * @throws \Exception
+     */
+    public static function getVersionByUrl($rawMetaInfoUrl): ?string
+    {
+        $content = file_get_contents($rawMetaInfoUrl);
+        if (false === $content) {
+            return null;
+        }
+        $info = BabyYamlUtil::readBabyYamlString($content);
+        return $info['version'] ?? null;
+    }
+
+
+    /**
      * Returns the version number associated with the given planetDir, if found in the meta-info file.
      * If not, null is returned.
      * @param string $planetDir
+     * @return string|null
      */
     public static function getVersion(string $planetDir)
     {
