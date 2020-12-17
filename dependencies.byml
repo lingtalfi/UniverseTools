@@ -4,6 +4,7 @@ dependencies:
         - DirScanner
         - BabyYaml
         - TokenFun
+        - LingTalfi
     
 
 post_install: []

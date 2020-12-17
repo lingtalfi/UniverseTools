@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2020-12-14
+2019-02-08 -> 2020-12-17
 
 
 
@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.21.10 -- 2020-12-17
+
+    - add PlanetTool::getVersionByPlanetDir
+  
 - 1.21.9 -- 2020-12-14
 
     - fix MetaInfoTool::getVersion not considering the case where the meta info file doesn't exist

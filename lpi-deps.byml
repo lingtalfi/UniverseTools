@@ -255,3 +255,9 @@
     - Ling:DirScanner:1.13.2+
     - Ling:BabyYaml:1.7.5+
     - Ling:TokenFun:1.11.4+
+
+1.21.10: 
+    - Ling:Bat:1.296+
+    - Ling:DirScanner:1.13.2+
+    - Ling:BabyYaml:1.7.5+
+    - Ling:TokenFun:1.11.4+

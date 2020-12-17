@@ -55,7 +55,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [PlanetTool::removePlanet](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L312-L325)
+See the source code for method [PlanetTool::removePlanet](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L333-L346)
 
 
 See Also

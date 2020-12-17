@@ -1,6 +1,6 @@
 Ling/UniverseTools
 ================
-2019-02-26 --> 2020-12-14
+2019-02-26 --> 2020-12-17
 
 
 
@@ -27,6 +27,7 @@ Table of contents
     - [MetaInfoTool::getVersion](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/MetaInfoTool/getVersion.md) &ndash; Returns the version number associated with the given planetDir, if found in the meta-info file.
     - [MetaInfoTool::writeInfo](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/MetaInfoTool/writeInfo.md) &ndash; Writes the given meta $info to the meta-info.byml file of the given $planetDir.
 - [PlanetTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool.md) &ndash; The PlanetTool class.
+    - [PlanetTool::getVersionByPlanetDir](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/getVersionByPlanetDir.md) &ndash; Returns the version number of the planet if found, or null otherwise.
     - [PlanetTool::getClassNames](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/getClassNames.md) &ndash; Parses the given directory recursively and returns an array containing the names of all [bsr-1](https://github.com/lingtalfi/TheScientist/blob/master/bsr-1.md) classes found.
     - [PlanetTool::getPlanetDirs](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/getPlanetDirs.md) &ndash; Returns the list of planet dirs for a given $universeDir.
     - [PlanetTool::getGalaxyNamePlanetNameByDir](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/getGalaxyNamePlanetNameByDir.md) &ndash; Returns an array containing the galaxy name and the short planet name extracted from the given $planetDir.
@@ -45,5 +46,6 @@ Dependencies
 - [DirScanner](https://github.com/lingtalfi/DirScanner)
 - [BabyYaml](https://github.com/lingtalfi/BabyYaml)
 - [TokenFun](https://github.com/lingtalfi/TokenFun)
+- [LingTalfi](https://github.com/lingtalfi/LingTalfi)
 
 

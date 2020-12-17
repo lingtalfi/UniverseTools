@@ -5,6 +5,7 @@ namespace Ling\UniverseTools;
 
 use Ling\Bat\FileSystemTool;
 use Ling\DirScanner\YorgDirScannerTool;
+use Ling\LingTalfi\Util\ReadmeUtil;
 use Ling\TokenFun\TokenFinder\Tool\TokenFinderTool;
 use Ling\UniverseTools\Exception\UniverseToolsException;
 
@@ -17,6 +18,26 @@ use Ling\UniverseTools\Exception\UniverseToolsException;
 class PlanetTool
 {
 
+
+    /**
+     * Returns the version number of the planet if found, or null otherwise.
+     *
+     * @param string $planetDir
+     * @return string|null
+     */
+    public static function getVersionByPlanetDir(string $planetDir)
+    {
+        $version = MetaInfoTool::getVersion($planetDir);
+        if (true === empty($version)) {
+            $ru = new ReadmeUtil();
+            $rf = $planetDir . "/README.md";
+            if (file_exists($rf)) {
+                $versionInfo = $ru->getLatestVersionInfo($rf);
+                $version = $versionInfo[0];
+            }
+        }
+        return $version;
+    }
 
     /**
      * Parses the given directory recursively and returns an array containing the names of all @kw(bsr-1) classes found.

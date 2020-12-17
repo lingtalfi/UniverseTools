@@ -78,6 +78,9 @@ class MetaInfoTool
             if (is_file($metaFile)) {
                 $info = BabyYamlUtil::readFile($metaFile);
                 $ret = $info['version'] ?? null;
+                if (null === $ret) {
+                    return $ret;
+                }
             }
         }
         return (string)$ret;
