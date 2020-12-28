@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2020-12-17
+2019-02-08 -> 2020-12-28
 
 
 
@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.21.11 -- 2020-12-28
+
+    - add DependencyTool::getDependencyListByFile
+  
 - 1.21.10 -- 2020-12-17
 
     - add PlanetTool::getVersionByPlanetDir

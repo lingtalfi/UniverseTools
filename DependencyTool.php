@@ -301,12 +301,35 @@ class DependencyTool
             throw new UniverseToolsException("No dir found in $planetDir");
         }
 
-        $ret = [];
+
         $dependencyFile = $planetDir . "/dependencies.byml";
-        if (file_exists($dependencyFile)) {
-            $conf = BabyYamlUtil::readFile($dependencyFile);
+        return self::getDependencyListByFile($dependencyFile);
+    }
 
 
+    /**
+     *
+     * Parses the given dependencies.byml file, and returns an array of all dependencies found in it.
+     *
+     * See the @page(universe dependencies document) for more information.
+     *
+     * The array is a list of dependencyItem, each of which being an array with 2 items:
+     *
+     * - 0: the galaxy identifier/ dependency system
+     * - 1: the dependency identifier (name or url, ...), aka packageImportName.
+     *
+     *
+     *
+     *
+     *
+     * @param string $file
+     * @return array
+     */
+    public static function getDependencyListByFile(string $file): array
+    {
+        $ret = [];
+        if (file_exists($file)) {
+            $conf = BabyYamlUtil::readFile($file);
             unset($conf['post_install']);
 
             $dependencies = $conf['dependencies'] ?? [];
