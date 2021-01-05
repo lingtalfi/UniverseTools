@@ -99,7 +99,7 @@ array(3) {
 
 Source Code
 ===========
-See the source code for method [DependencyTool::getDependencyList](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L298-L307)
+See the source code for method [DependencyTool::getDependencyList](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L333-L342)
 
 
 See Also

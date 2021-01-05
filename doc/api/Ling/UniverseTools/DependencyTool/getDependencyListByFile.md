@@ -56,7 +56,7 @@ Returns array.
 
 Source Code
 ===========
-See the source code for method [DependencyTool::getDependencyListByFile](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L328-L344)
+See the source code for method [DependencyTool::getDependencyListByFile](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L363-L379)
 
 
 See Also

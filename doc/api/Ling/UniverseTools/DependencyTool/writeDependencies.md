@@ -69,7 +69,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [DependencyTool::writeDependencies](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L420-L436)
+See the source code for method [DependencyTool::writeDependencies](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L455-L471)
 
 
 See Also
@@ -77,5 +77,5 @@ See Also
 
 The [DependencyTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/DependencyTool.md) class.
 
-Previous method: [getDependencyHomeUrl](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/DependencyTool/getDependencyHomeUrl.md)<br>
+Previous method: [getDependencyHomeUrl](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/DependencyTool/getDependencyHomeUrl.md)<br>Next method: [collectDependenciesRecursively](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/DependencyTool/collectDependenciesRecursively.md)<br>
 

@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2020-12-28
+2019-02-08 -> 2021-01-05
 
 
 
@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.21.12 -- 2021-01-05
+
+    - add DependencyTool::getDependencyListRecursiveByUniverseDirPlanets method
+  
 - 1.21.11 -- 2020-12-28
 
     - add DependencyTool::getDependencyListByFile

@@ -21,6 +21,41 @@ use Ling\UniverseTools\Exception\UniverseToolsException;
 class DependencyTool
 {
 
+
+    /**
+     * Returns a list of @page(planet dot names) corresponding to all the dependencies of the given planets, recursively.
+     *
+     * By default, it also includes the given planets in the list. If you just want the dependencies, set $includeParents=false.
+     *
+     * The planets are searched only in the given universe directory (i.e. not in the web).
+     *
+     * Errors are reported in the $errors variable.
+     *
+     *
+     *
+     * @param string $uniDir
+     * @param array $planetDotNames
+     * @param bool $includeParents
+     * @param array $errors
+     * @return array
+     */
+    public static function getDependencyListRecursiveByUniverseDirPlanets(string $uniDir, array $planetDotNames, bool $includeParents = true, array &$errors = []): array
+    {
+        $ret = [];
+        $errors = [];
+
+        if (true === $includeParents) {
+            $ret = $planetDotNames;
+        }
+
+        foreach ($planetDotNames as $planetDotName) {
+            self::collectDependenciesRecursively($ret, $uniDir, $planetDotName, $errors);
+        }
+        return $ret;
+    }
+
+
+
     /**
      * A method to help creating the @concept(dependencies.byml file).
      *
@@ -433,5 +468,44 @@ class DependencyTool
         $dependenciesString = self::parseDumpDependencies($planetDir, $conf, $_postInstall, $options);
 
         return FileSystemTool::mkfile($dependencyFile, $dependenciesString);
+    }
+
+
+
+
+    //--------------------------------------------
+    //
+    //--------------------------------------------
+    /**
+     * Collects the dependencies of the given planet recursively, and stores them in the given ret array.
+     *
+     * Errors are put in the $errors variable.
+     *
+     *
+     *
+     * @param array $ret
+     * @param string $uniDir
+     * @param string $planetDotName
+     * @param array $errors
+     * @throws \Exception
+     */
+    private static function collectDependenciesRecursively(array &$ret, string $uniDir, string $planetDotName, array &$errors = [])
+    {
+        list($galaxy, $planet) = PlanetTool::extractPlanetDotName($planetDotName);
+        $planetDir = $uniDir . "/$galaxy/$planet";
+        if (false === is_dir($planetDir)) {
+            $errors[] = "Planet not found: $planetDotName, in $planetDir.";
+        } else {
+            $dependencies = self::getDependencyList($planetDir);
+            foreach ($dependencies as $dependency) {
+                list($depGalaxy, $depPlanet) = $dependency;
+                $depPlanetDotName = $depGalaxy . "." . $depPlanet;
+                if (false === in_array($depPlanetDotName, $ret, true)) {
+                    $ret[] = $depPlanetDotName;
+                    self::collectDependenciesRecursively($ret, $uniDir, $depPlanetDotName, $errors);
+                }
+            }
+        }
+
     }
 }

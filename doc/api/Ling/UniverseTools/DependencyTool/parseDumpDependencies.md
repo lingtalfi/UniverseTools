@@ -105,7 +105,7 @@ TokenFun: *
 
 Source Code
 ===========
-See the source code for method [DependencyTool::parseDumpDependencies](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L55-L203)
+See the source code for method [DependencyTool::parseDumpDependencies](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L90-L238)
 
 
 See Also
@@ -113,5 +113,5 @@ See Also
 
 The [DependencyTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/DependencyTool.md) class.
 
-Next method: [getUniverseAssetDependencies](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/DependencyTool/getUniverseAssetDependencies.md)<br>
+Previous method: [getDependencyListRecursiveByUniverseDirPlanets](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/DependencyTool/getDependencyListRecursiveByUniverseDirPlanets.md)<br>Next method: [getUniverseAssetDependencies](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/DependencyTool/getUniverseAssetDependencies.md)<br>
 
