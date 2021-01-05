@@ -7,7 +7,7 @@ DependencyTool::getDependencyListRecursiveByUniverseDirPlanets
 
 
 
-DependencyTool::getDependencyListRecursiveByUniverseDirPlanets — Returns a list of [planet dot names](https://github.com/karayabin/universe-snapshot#the-planet-dot-name) corresponding to all the dependencies of the given planets, recursively.
+DependencyTool::getDependencyListRecursiveByUniverseDirPlanets — Returns a list of sorted [planet dot names](https://github.com/karayabin/universe-snapshot#the-planet-dot-name) corresponding to all the dependencies of the given planets, recursively.
 
 
 
@@ -21,7 +21,7 @@ public static [DependencyTool::getDependencyListRecursiveByUniverseDirPlanets](h
 
 
 
-Returns a list of [planet dot names](https://github.com/karayabin/universe-snapshot#the-planet-dot-name) corresponding to all the dependencies of the given planets, recursively.
+Returns a list of sorted [planet dot names](https://github.com/karayabin/universe-snapshot#the-planet-dot-name) corresponding to all the dependencies of the given planets, recursively.
 
 By default, it also includes the given planets in the list. If you just want the dependencies, set $includeParents=false.
 
@@ -67,7 +67,7 @@ Returns array.
 
 Source Code
 ===========
-See the source code for method [DependencyTool::getDependencyListRecursiveByUniverseDirPlanets](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L42-L55)
+See the source code for method [DependencyTool::getDependencyListRecursiveByUniverseDirPlanets](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L42-L56)
 
 
 See Also

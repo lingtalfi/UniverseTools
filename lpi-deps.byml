@@ -275,3 +275,10 @@
     - Ling:BabyYaml:1.7.5+
     - Ling:TokenFun:1.11.4+
     - Ling:LingTalfi:1.23.4+
+
+1.21.13: 
+    - Ling:Bat:1.297+
+    - Ling:DirScanner:1.13.2+
+    - Ling:BabyYaml:1.7.5+
+    - Ling:TokenFun:1.11.4+
+    - Ling:LingTalfi:1.23.4+

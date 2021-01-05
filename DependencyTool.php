@@ -23,7 +23,7 @@ class DependencyTool
 
 
     /**
-     * Returns a list of @page(planet dot names) corresponding to all the dependencies of the given planets, recursively.
+     * Returns a list of sorted @page(planet dot names) corresponding to all the dependencies of the given planets, recursively.
      *
      * By default, it also includes the given planets in the list. If you just want the dependencies, set $includeParents=false.
      *
@@ -51,9 +51,9 @@ class DependencyTool
         foreach ($planetDotNames as $planetDotName) {
             self::collectDependenciesRecursively($ret, $uniDir, $planetDotName, $errors);
         }
+        sort($ret);
         return $ret;
     }
-
 
 
     /**

@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.21.13 -- 2021-01-05
+
+    - update DependencyTool::getDependencyListRecursiveByUniverseDirPlanets, now returns a sorted list
+
 - 1.21.12 -- 2021-01-05
 
     - add DependencyTool::getDependencyListRecursiveByUniverseDirPlanets method
