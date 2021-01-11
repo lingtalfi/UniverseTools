@@ -1,7 +1,30 @@
 Conception notes
 ========
-2020-12-08
+2020-12-08 -> 2021-01-11
 
+
+
+
+The import procedure
+===========
+2021-01-11
+
+
+The **import procedure** of a planet is a two steps procedure:
+
+- copying the planet directory to the host application  
+    
+    The destination directory is: **$app/universe/$galaxy/$planet**
+  
+    With:
+    - $app: the path to the application
+    - $galaxy: the galaxy name containing the planet
+    - $planet: the name of the planet
+  
+
+- copying the assets of the planet to the application
+    
+    Assets are defined in the [assets/map](#the-planets-and-assetsmap) directory of the planet.
 
 
 

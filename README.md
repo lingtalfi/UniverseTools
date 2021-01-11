@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2021-01-05
+2019-02-08 -> 2021-01-11
 
 
 
@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.21.14 -- 2021-01-11
+
+    - update conception notes
+  
 - 1.21.13 -- 2021-01-05
 
     - update DependencyTool::getDependencyListRecursiveByUniverseDirPlanets, now returns a sorted list
