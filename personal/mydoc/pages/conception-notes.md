@@ -28,6 +28,30 @@ The **import procedure** of a planet is a two steps procedure:
 
 
 
+The remove procedure
+===========
+2021-01-11
+
+
+The **remove procedure** of a planet hosted in an application is a two steps procedure:
+
+- removing the assets of the planet from the application
+    
+    Assets are defined in the [assets/map](#the-planets-and-assetsmap) directory of the planet.
+  
+- removing the planet directory from the host application  
+    
+    The planet directory is: **$app/universe/$galaxy/$planet**
+  
+    With:
+    - $app: the path to the application
+    - $galaxy: the galaxy name containing the planet
+    - $planet: the name of the planet
+  
+
+
+
+
 The planets and assets/map
 =========
 2020-12-08
