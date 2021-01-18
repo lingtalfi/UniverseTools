@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2021-01-11
+2019-02-08 -> 2021-01-18
 
 
 
@@ -38,6 +38,11 @@ Summary
 History Log
 ==============
 
+- 1.22.0 -- 2021-01-18
+
+    - remove concept of import procedure/remove procedure
+    - updated PlanetTool, removed importPlanetByExternalDir and removePlanet, add installAssetsByPlanetDotName and removeAssetsByPlanetDotName
+  
 - 1.21.15 -- 2021-01-11
 
     - update conception notes, add remove procedure

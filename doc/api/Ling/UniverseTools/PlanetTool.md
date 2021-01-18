@@ -4,7 +4,7 @@
 
 The PlanetTool class
 ================
-2019-02-26 --> 2021-01-11
+2019-02-26 --> 2021-01-18
 
 
 
@@ -36,8 +36,8 @@ class <span class="pl-k">PlanetTool</span>  {
     - public static [extractPlanetId](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/extractPlanetId.md)(string $planetId) : array
     - public static [extractPlanetDotName](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/extractPlanetDotName.md)(string $planetDotName) : array
     - public static [getGalaxyPlanetByClassName](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/getGalaxyPlanetByClassName.md)(string $className) : array | false
-    - public static [importPlanetByExternalDir](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/importPlanetByExternalDir.md)(string $planetDot, string $extPlanetDir, string $appDir) : void
-    - public static [removePlanet](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/removePlanet.md)(string $planetDot, string $appDir) : void
+    - public static [installAssetsByPlanetDotName](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/installAssetsByPlanetDotName.md)(string $appDir, string $planetDotName) : void
+    - public static [removeAssetsByPlanetDotName](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/removeAssetsByPlanetDotName.md)(string $appDir, string $planetDotName) : void
 
 }
 
@@ -58,8 +58,8 @@ Methods
 - [PlanetTool::extractPlanetId](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/extractPlanetId.md) &ndash; Returns an array containing the galaxy and the planet, based on the given planetId.
 - [PlanetTool::extractPlanetDotName](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/extractPlanetDotName.md) &ndash; Returns an array containing the galaxy and the planet, based on the given [planetDotName](https://github.com/karayabin/universe-snapshot#the-planet-dot-name).
 - [PlanetTool::getGalaxyPlanetByClassName](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/getGalaxyPlanetByClassName.md) &ndash; Returns an array containing the galaxy and planet contained in the given class name.
-- [PlanetTool::importPlanetByExternalDir](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/importPlanetByExternalDir.md) &ndash; Imports a planet by copying an external source dir, and importing the assets/map into the app.
-- [PlanetTool::removePlanet](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/removePlanet.md) &ndash; Removes the given planet from the given app directory.
+- [PlanetTool::installAssetsByPlanetDotName](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/installAssetsByPlanetDotName.md) &ndash; Installs the assets of the given planet.
+- [PlanetTool::removeAssetsByPlanetDotName](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/removeAssetsByPlanetDotName.md) &ndash; Removes the assets for the given planet.
 
 
 
