@@ -3,7 +3,6 @@
 namespace Ling\UniverseTools;
 
 
-use Ling\Bat\FileSystemTool;
 use Ling\DirScanner\YorgDirScannerTool;
 use Ling\LingTalfi\Util\ReadmeUtil;
 use Ling\TokenFun\TokenFinder\Tool\TokenFinderTool;
@@ -37,6 +36,19 @@ class PlanetTool
             }
         }
         return $version;
+    }
+
+
+    /**
+     * Returns the [planet slash name](https://github.com/karayabin/universe-snapshot#the-planet-slash-name) from the given planet dot name.
+     *
+     *
+     * @param string $planetDotName
+     * @return string
+     */
+    public static function getPlanetSlashNameByDotName(string $planetDotName): string
+    {
+        return str_replace(".", "/", $planetDotName);
     }
 
     /**

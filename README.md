@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2021-01-18
+2019-02-08 -> 2021-01-19
 
 
 
@@ -37,6 +37,10 @@ Summary
 
 History Log
 ==============
+
+- 1.22.1 -- 2021-01-19
+
+    - add PlanetTool::getPlanetSlashNameByDotName method
 
 - 1.22.0 -- 2021-01-18
 

@@ -56,7 +56,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [PlanetTool::getPlanetDirs](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L163-L174)
+See the source code for method [PlanetTool::getPlanetDirs](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L175-L186)
 
 
 See Also
