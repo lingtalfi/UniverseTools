@@ -58,7 +58,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [PlanetTool::extractPlanetId](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L252-L259)
+See the source code for method [PlanetTool::extractPlanetId](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L265-L272)
 
 
 See Also

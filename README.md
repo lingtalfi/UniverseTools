@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.2 -- 2021-01-19
+
+    - add PlanetTool::getPlanetDirByPlanetDotName method
+  
 - 1.22.1 -- 2021-01-19
 
     - add PlanetTool::getPlanetSlashNameByDotName method

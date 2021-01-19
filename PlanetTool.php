@@ -51,6 +51,19 @@ class PlanetTool
         return str_replace(".", "/", $planetDotName);
     }
 
+
+    /**
+     * Returns the location of the planet directory from the given planet dot name and app dir.
+     *
+     * @param string $planetDotName
+     * @param string $appDir
+     * @return string
+     */
+    public static function getPlanetDirByPlanetDotName(string $planetDotName, string $appDir): string
+    {
+        return $appDir . "/universe/" . self::getPlanetSlashNameByDotName($planetDotName);
+    }
+
     /**
      * Parses the given directory recursively and returns an array containing the names of all @kw(bsr-1) classes found.
      *
