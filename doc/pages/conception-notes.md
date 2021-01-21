@@ -1,6 +1,6 @@
 Conception notes
 ========
-2020-12-08 -> 2021-01-18
+2020-12-08 -> 2021-01-21
 
 
 
@@ -9,15 +9,19 @@ Conception notes
 
 The planets and assets/map
 =========
-2020-12-08
+2020-12-21
 
 The **assets/map** directory is an unofficial convention used by all planets in the **Ling** galaxy.
+
+
+
 
 The promise is that anything stored into this directory will be mapped to the current application when the planet is
 imported into that application.
 
-This trick was used by
-the [Uni2 installer](https://github.com/lingtalfi/Uni2): [uni](https://github.com/lingtalfi/universe-naive-importer).
+This trick was used by the [Uni2 installer](https://github.com/lingtalfi/Uni2): [uni](https://github.com/lingtalfi/universe-naive-importer).
+It's discussed briefly in the [dependencies section](https://github.com/lingtalfi/Uni2#dependenciesbyml) in the uni documentation, but we think it's a great feature.
+
 
 We've decided to make it "official" by incorporating into our tools.
 

@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.3 -- 2021-01-21
+
+    - update conception notes
+  
 - 1.22.2 -- 2021-01-19
 
     - add PlanetTool::getPlanetDirByPlanetDotName method
