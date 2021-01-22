@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.5 -- 2021-01-22
+
+    - add PlanetTool::getCompressedPlanetName method
+  
 - 1.22.4 -- 2021-01-22
 
     - update DependencyTool::getDependencyList and getDependencyListByFile methods, add dotNames option

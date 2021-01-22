@@ -221,6 +221,7 @@ class PlanetTool
     /**
      * Returns the @page(tight planet name) for a given planet.
      *
+     * Note: it's the same as the getCompressedPlanetName method.
      * @param string $planetName
      * @return string
      */
@@ -229,6 +230,19 @@ class PlanetTool
         return str_replace("_", "", $planetName);
     }
 
+
+    /**
+     * Returns the [compressed planet name](https://github.com/karayabin/universe-snapshot#the-compressed-planet-name) for a given planet.
+     *
+     * Note: it's the same as the getTightPlanetName method.
+     *
+     * @param string $planetName
+     * @return string
+     */
+    public static function getCompressedPlanetName(string $planetName): string
+    {
+        return str_replace("_", "", $planetName);
+    }
 
     /**
      * Returns an array containing the galaxy name and the short planet name extracted from the given $planetName.
