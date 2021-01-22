@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2021-01-19
+2019-02-08 -> 2021-01-22
 
 
 
@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.4 -- 2021-01-22
+
+    - update DependencyTool::getDependencyList and getDependencyListByFile methods, add dotNames option
+  
 - 1.22.3 -- 2021-01-21
 
     - update conception notes

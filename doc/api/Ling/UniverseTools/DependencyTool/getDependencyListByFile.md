@@ -16,7 +16,7 @@ Description
 ================
 
 
-public static [DependencyTool::getDependencyListByFile](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/DependencyTool/getDependencyListByFile.md)(string $file) : array
+public static [DependencyTool::getDependencyListByFile](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/DependencyTool/getDependencyListByFile.md)(string $file, ?array $options = []) : array
 
 
 
@@ -31,6 +31,10 @@ The array is a list of dependencyItem, each of which being an array with 2 items
 - 1: the dependency identifier (name or url, ...), aka packageImportName.
 
 
+Available options are:
+- dotNames: bool=false, if true, each returned item is a planetDotName instead
+
+
 
 
 Parameters
@@ -38,6 +42,10 @@ Parameters
 
 
 - file
+
+    
+
+- options
 
     
 
@@ -56,7 +64,7 @@ Returns array.
 
 Source Code
 ===========
-See the source code for method [DependencyTool::getDependencyListByFile](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L363-L379)
+See the source code for method [DependencyTool::getDependencyListByFile](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L376-L399)
 
 
 See Also

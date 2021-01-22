@@ -324,21 +324,29 @@ class DependencyTool
      * - 1: the dependency identifier (name or url, ...), aka packageImportName.
      *
      *
+     * Available options are:
+     * - dotNames: bool=false, if true, this method returns an array of planetDotNames instead
+     *
+     *
      *
      *
      * @param string $planetDir
+     * @param array $options
      * @return array
      * @throws UniverseToolsException
      */
-    public static function getDependencyList(string $planetDir)
+    public static function getDependencyList(string $planetDir, array $options = [])
     {
+        $dotNames = $options['dotNames'] ?? false;
         if (false === is_dir($planetDir)) {
             throw new UniverseToolsException("No dir found in $planetDir");
         }
 
 
         $dependencyFile = $planetDir . "/dependencies.byml";
-        return self::getDependencyListByFile($dependencyFile);
+        return self::getDependencyListByFile($dependencyFile, [
+            'dotNames' => $dotNames,
+        ]);
     }
 
 
@@ -354,14 +362,22 @@ class DependencyTool
      * - 1: the dependency identifier (name or url, ...), aka packageImportName.
      *
      *
+     * Available options are:
+     * - dotNames: bool=false, if true, each returned item is a planetDotName instead
+     *
+     *
      *
      *
      *
      * @param string $file
+     * @param array $options
      * @return array
      */
-    public static function getDependencyListByFile(string $file): array
+    public static function getDependencyListByFile(string $file, array $options = []): array
     {
+        $dotNames = $options['dotNames'] ?? false;
+
+
         $ret = [];
         if (file_exists($file)) {
             $conf = BabyYamlUtil::readFile($file);
@@ -371,7 +387,11 @@ class DependencyTool
 
             foreach ($dependencies as $dependencySystem => $deps) {
                 foreach ($deps as $dependency) {
-                    $ret[] = [$dependencySystem, $dependency];
+                    if (false === $dotNames) {
+                        $ret[] = [$dependencySystem, $dependency];
+                    } else {
+                        $ret[] = $dependencySystem . "." . $dependency;
+                    }
                 }
             }
         }

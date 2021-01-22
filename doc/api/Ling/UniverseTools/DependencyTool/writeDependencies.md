@@ -69,7 +69,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [DependencyTool::writeDependencies](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L455-L471)
+See the source code for method [DependencyTool::writeDependencies](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L475-L491)
 
 
 See Also
