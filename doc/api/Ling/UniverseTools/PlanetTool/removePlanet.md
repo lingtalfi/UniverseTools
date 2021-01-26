@@ -63,7 +63,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [PlanetTool::removePlanet](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L425-L442)
+See the source code for method [PlanetTool::removePlanet](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L439-L456)
 
 
 See Also

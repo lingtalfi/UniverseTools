@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2021-01-25
+2019-02-08 -> 2021-01-26
 
 
 
@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.7 -- 2021-01-26
+
+    - add PlanetTool::exists method
+  
 - 1.22.6 -- 2021-01-25
 
     - add PlanetTool::importPlanetByExternalDir and removePlanet method, with optional assets/map

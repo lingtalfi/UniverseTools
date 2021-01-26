@@ -52,7 +52,7 @@ Returns array | false.
 
 Source Code
 ===========
-See the source code for method [PlanetTool::getGalaxyPlanetByClassName](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L323-L333)
+See the source code for method [PlanetTool::getGalaxyPlanetByClassName](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L337-L347)
 
 
 See Also

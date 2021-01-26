@@ -58,7 +58,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [PlanetTool::extractPlanetDotName](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L303-L310)
+See the source code for method [PlanetTool::extractPlanetDotName](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L317-L324)
 
 
 See Also

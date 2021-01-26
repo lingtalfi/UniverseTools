@@ -39,6 +39,20 @@ class PlanetTool
         return $version;
     }
 
+    /**
+     * Returns whether the given planet exists in the given app.
+     *
+     *
+     * @param string $planetDotName
+     * @param string $applicationDir
+     * @return bool
+     */
+    public static function exists(string $planetDotName, string $applicationDir): bool
+    {
+        $planetDir = self::getPlanetDirByPlanetDotName($planetDotName, $applicationDir);
+        return (true === file_exists($planetDir));
+    }
+
 
     /**
      * Returns the [planet slash name](https://github.com/karayabin/universe-snapshot#the-planet-slash-name) from the given planet dot name.

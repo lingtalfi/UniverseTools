@@ -53,7 +53,7 @@ Returns string.
 
 Source Code
 ===========
-See the source code for method [PlanetTool::getPlanetDirByPlanetDotName](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L63-L66)
+See the source code for method [PlanetTool::getPlanetDirByPlanetDotName](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L77-L80)
 
 
 See Also

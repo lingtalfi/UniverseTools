@@ -49,7 +49,7 @@ Returns string.
 
 Source Code
 ===========
-See the source code for method [PlanetTool::getPlanetSlashNameByDotName](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L50-L53)
+See the source code for method [PlanetTool::getPlanetSlashNameByDotName](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L64-L67)
 
 
 See Also
@@ -57,5 +57,5 @@ See Also
 
 The [PlanetTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool.md) class.
 
-Previous method: [getVersionByPlanetDir](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/getVersionByPlanetDir.md)<br>Next method: [getPlanetDirByPlanetDotName](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/getPlanetDirByPlanetDotName.md)<br>
+Previous method: [exists](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/exists.md)<br>Next method: [getPlanetDirByPlanetDotName](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/getPlanetDirByPlanetDotName.md)<br>
 
