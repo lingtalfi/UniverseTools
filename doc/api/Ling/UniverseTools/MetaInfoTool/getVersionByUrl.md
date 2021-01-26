@@ -56,7 +56,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [MetaInfoTool::getVersionByUrl](https://github.com/lingtalfi/UniverseTools/blob/master/MetaInfoTool.php#L56-L64)
+See the source code for method [MetaInfoTool::getVersionByUrl](https://github.com/lingtalfi/UniverseTools/blob/master/MetaInfoTool.php#L56-L68)
 
 
 See Also

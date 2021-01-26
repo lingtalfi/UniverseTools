@@ -55,7 +55,11 @@ class MetaInfoTool
      */
     public static function getVersionByUrl($rawMetaInfoUrl): ?string
     {
-        $content = file_get_contents($rawMetaInfoUrl);
+        if (true === file_exists($rawMetaInfoUrl)) {
+            $content = file_get_contents($rawMetaInfoUrl);
+        } else {
+            return null;
+        }
         if (false === $content) {
             return null;
         }

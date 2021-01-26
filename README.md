@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.8 -- 2021-01-26
+
+    - fix MetaInfoTool::getVersionByUrl not treating case when the planet does not exist
+  
 - 1.22.7 -- 2021-01-26
 
     - add PlanetTool::exists method
