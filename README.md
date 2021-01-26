@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.9 -- 2021-01-26
+
+    - fix MetaInfoTool::getVersionByUrl using incorrect function to get url
+  
 - 1.22.8 -- 2021-01-26
 
     - fix MetaInfoTool::getVersionByUrl not treating case when the planet does not exist

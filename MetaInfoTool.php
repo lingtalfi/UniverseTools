@@ -5,6 +5,7 @@ namespace Ling\UniverseTools;
 
 use Ling\BabyYaml\BabyYamlUtil;
 use Ling\Bat\FileSystemTool;
+use Ling\Bat\HttpTool;
 
 /**
  * The MetaInfoTool class.
@@ -55,7 +56,7 @@ class MetaInfoTool
      */
     public static function getVersionByUrl($rawMetaInfoUrl): ?string
     {
-        if (true === file_exists($rawMetaInfoUrl)) {
+        if (true === HttpTool::isValidUrl($rawMetaInfoUrl)) {
             $content = file_get_contents($rawMetaInfoUrl);
         } else {
             return null;
