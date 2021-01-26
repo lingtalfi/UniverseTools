@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2021-01-22
+2019-02-08 -> 2021-01-25
 
 
 
@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.6 -- 2021-01-25
+
+    - add PlanetTool::importPlanetByExternalDir and removePlanet method, with optional assets/map
+  
 - 1.22.5 -- 2021-01-22
 
     - add PlanetTool::getCompressedPlanetName method

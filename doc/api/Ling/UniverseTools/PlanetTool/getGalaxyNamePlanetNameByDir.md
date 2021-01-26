@@ -50,7 +50,7 @@ Returns array | false.
 
 Source Code
 ===========
-See the source code for method [PlanetTool::getGalaxyNamePlanetNameByDir](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L209-L218)
+See the source code for method [PlanetTool::getGalaxyNamePlanetNameByDir](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L210-L219)
 
 
 See Also

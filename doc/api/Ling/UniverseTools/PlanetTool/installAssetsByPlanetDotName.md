@@ -55,7 +55,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [PlanetTool::installAssetsByPlanetDotName](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L372-L379)
+See the source code for method [PlanetTool::installAssetsByPlanetDotName](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L384-L391)
 
 
 See Also
@@ -63,5 +63,5 @@ See Also
 
 The [PlanetTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool.md) class.
 
-Previous method: [getGalaxyPlanetByClassName](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/getGalaxyPlanetByClassName.md)<br>Next method: [removeAssetsByPlanetDotName](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/removeAssetsByPlanetDotName.md)<br>
+Previous method: [importPlanetByExternalDir](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/importPlanetByExternalDir.md)<br>Next method: [removeAssetsByPlanetDotName](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/removeAssetsByPlanetDotName.md)<br>
 

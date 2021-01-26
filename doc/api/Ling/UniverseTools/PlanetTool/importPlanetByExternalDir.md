@@ -7,7 +7,7 @@ PlanetTool::importPlanetByExternalDir
 
 
 
-PlanetTool::importPlanetByExternalDir — Imports a planet by copying an external source dir, and importing the assets/map into the app.
+PlanetTool::importPlanetByExternalDir — Imports a planet by copying its given external source dir to the target application.
 
 
 
@@ -16,14 +16,18 @@ Description
 ================
 
 
-public static [PlanetTool::importPlanetByExternalDir](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/importPlanetByExternalDir.md)(string $planetDot, string $extPlanetDir, string $appDir) : void
+public static [PlanetTool::importPlanetByExternalDir](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/importPlanetByExternalDir.md)(string $planetDot, string $extPlanetDir, string $appDir, ?array $options = []) : void
 
 
 
 
-Imports a planet by copying an external source dir, and importing the assets/map into the app.
+Imports a planet by copying its given external source dir to the target application.
+Optionally, the assets/map can be copied into the app.
 
-See more details in the [UniverseTools conception notes](https://github.com/lingtalfi/UniverseTools/blob/master/doc/pages/conception-notes.md).
+Available options are:
+- assets: bool=false, if true, the assets/map will be copied to the application.
+
+See more details in the [import install discussion](https://github.com/lingtalfi/TheBar/blob/master/discussions/import-install.md#summary).
 
 
 
@@ -44,6 +48,10 @@ Parameters
 
     
 
+- options
+
+    
+
 
 Return values
 ================
@@ -59,7 +67,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [PlanetTool::importPlanetByExternalDir](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L305-L322)
+See the source code for method [PlanetTool::importPlanetByExternalDir](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L350-L373)
 
 
 See Also
@@ -67,5 +75,5 @@ See Also
 
 The [PlanetTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool.md) class.
 
-Previous method: [getGalaxyPlanetByClassName](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/getGalaxyPlanetByClassName.md)<br>Next method: [removePlanet](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/removePlanet.md)<br>
+Previous method: [getGalaxyPlanetByClassName](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/getGalaxyPlanetByClassName.md)<br>Next method: [installAssetsByPlanetDotName](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/installAssetsByPlanetDotName.md)<br>
 

@@ -49,7 +49,7 @@ Returns string | null.
 
 Source Code
 ===========
-See the source code for method [PlanetTool::getVersionByPlanetDir](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L27-L39)
+See the source code for method [PlanetTool::getVersionByPlanetDir](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L28-L40)
 
 
 See Also

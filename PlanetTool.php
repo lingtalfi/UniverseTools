@@ -3,6 +3,7 @@
 namespace Ling\UniverseTools;
 
 
+use Ling\Bat\FileSystemTool;
 use Ling\DirScanner\YorgDirScannerTool;
 use Ling\LingTalfi\Util\ReadmeUtil;
 use Ling\TokenFun\TokenFinder\Tool\TokenFinderTool;
@@ -332,33 +333,44 @@ class PlanetTool
     }
 
 
-//    /**
-//     * Imports a planet by copying an external source dir, and importing the assets/map into the app.
-//     *
-//     * See more details in the @page(UniverseTools conception notes).
-//     *
-//     * @param string $planetDot
-//     * @param string $extPlanetDir
-//     * @param string $appDir
-//     */
-//    public static function importPlanetByExternalDir(string $planetDot, string $extPlanetDir, string $appDir)
-//    {
-//        list($galaxy, $planet) = self::extractPlanetDotName($planetDot);
-//        if (false === file_exists($extPlanetDir)) {
-//            throw new UniverseToolsException("External source dir not found: $extPlanetDir.");
-//        }
-//        if (false === file_exists($appDir)) {
-//            throw new UniverseToolsException("Application dir not found: $appDir.");
-//        }
-//
-//        $newPlanetDir = $appDir . "/universe/$galaxy/$planet";
-//        FileSystemTool::copyDir($extPlanetDir, $newPlanetDir);
-//
-//        $assetsMapDir = $newPlanetDir . "/assets/map";
-//        if (is_dir($assetsMapDir)) {
-//            AssetsMapTool::copyAssets($assetsMapDir, $appDir);
-//        }
-//    }
+    /**
+     * Imports a planet by copying its given external source dir to the target application.
+     * Optionally, the assets/map can be copied into the app.
+     *
+     * Available options are:
+     * - assets: bool=false, if true, the assets/map will be copied to the application.
+     *
+     * See more details in the @page(import install discussion).
+     *
+     * @param string $planetDot
+     * @param string $extPlanetDir
+     * @param string $appDir
+     * @param array $options
+     */
+    public static function importPlanetByExternalDir(string $planetDot, string $extPlanetDir, string $appDir, array $options = [])
+    {
+        $assets = $options['assets'] ?? false;
+
+
+        list($galaxy, $planet) = self::extractPlanetDotName($planetDot);
+        if (false === file_exists($extPlanetDir)) {
+            throw new UniverseToolsException("External source dir not found: $extPlanetDir.");
+        }
+        if (false === file_exists($appDir)) {
+            throw new UniverseToolsException("Application dir not found: $appDir.");
+        }
+
+        $newPlanetDir = $appDir . "/universe/$galaxy/$planet";
+        FileSystemTool::copyDir($extPlanetDir, $newPlanetDir);
+
+
+        if (true === $assets) {
+            $assetsMapDir = $newPlanetDir . "/assets/map";
+            if (is_dir($assetsMapDir)) {
+                AssetsMapTool::copyAssets($assetsMapDir, $appDir);
+            }
+        }
+    }
 
 
     /**
@@ -397,28 +409,36 @@ class PlanetTool
     }
 
 
-//    /**
-//     * Removes the given planet from the given app directory. The assets/map files are also removed.
-//     *
-//     * See more details in the @page(UniverseTools conception notes).
-//     *
-//     *
-//     * @param string $planetDot
-//     * @param string $appDir
-//     */
-//    public static function removePlanet(string $planetDot, string $appDir)
-//    {
-//
-//        list($galaxy, $planet) = self::extractPlanetDotName($planetDot);
-//        $planetDir = $appDir . "/universe/$galaxy/$planet";
-//        $assetMapDir = $planetDir . "/assets/map";
-//
-//        if (is_dir($assetMapDir)) {
-//            AssetsMapTool::removeAssets($assetMapDir, $appDir);
-//        }
-//        if (is_dir($planetDir)) {
-//            FileSystemTool::remove($planetDir);
-//        }
-//    }
+    /**
+     * Removes the given planet from the given app directory.
+     * Optionally, the assets/map files are also removed.
+     *
+     * Available options are:
+     * - assets: bool=false, if true, the assets/map will be removed from the application.
+     *
+     * See more details in the @page(import install discussion).
+     *
+     * @param string $planetDot
+     * @param string $appDir
+     * @param array $options
+     */
+    public static function removePlanet(string $planetDot, string $appDir, array $options = [])
+    {
+        $assets = $options['assets'] ?? false;
+
+        list($galaxy, $planet) = self::extractPlanetDotName($planetDot);
+        $planetDir = $appDir . "/universe/$galaxy/$planet";
+
+        if (true === $assets) {
+            $assetMapDir = $planetDir . "/assets/map";
+            if (is_dir($assetMapDir)) {
+                AssetsMapTool::removeAssets($assetMapDir, $appDir);
+            }
+        }
+
+        if (is_dir($planetDir)) {
+            FileSystemTool::remove($planetDir);
+        }
+    }
 
 }

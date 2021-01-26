@@ -16,14 +16,18 @@ Description
 ================
 
 
-public static [PlanetTool::removePlanet](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/removePlanet.md)(string $planetDot, string $appDir) : void
+public static [PlanetTool::removePlanet](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/removePlanet.md)(string $planetDot, string $appDir, ?array $options = []) : void
 
 
 
 
-Removes the given planet from the given app directory. The assets/map files are also removed.
+Removes the given planet from the given app directory.
+Optionally, the assets/map files are also removed.
 
-See more details in the [UniverseTools conception notes](https://github.com/lingtalfi/UniverseTools/blob/master/doc/pages/conception-notes.md).
+Available options are:
+- assets: bool=false, if true, the assets/map will be removed from the application.
+
+See more details in the [import install discussion](https://github.com/lingtalfi/TheBar/blob/master/discussions/import-install.md#summary).
 
 
 
@@ -37,6 +41,10 @@ Parameters
     
 
 - appDir
+
+    
+
+- options
 
     
 
@@ -55,7 +63,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [PlanetTool::removePlanet](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L333-L346)
+See the source code for method [PlanetTool::removePlanet](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L425-L442)
 
 
 See Also
@@ -63,5 +71,5 @@ See Also
 
 The [PlanetTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool.md) class.
 
-Previous method: [importPlanetByExternalDir](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/importPlanetByExternalDir.md)<br>
+Previous method: [removeAssetsByPlanetDotName](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool/removeAssetsByPlanetDotName.md)<br>
 

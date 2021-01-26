@@ -87,7 +87,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [PlanetTool::getClassNames](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L105-L175)
+See the source code for method [PlanetTool::getClassNames](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L106-L176)
 
 
 See Also

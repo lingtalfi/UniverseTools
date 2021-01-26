@@ -49,7 +49,7 @@ Returns string.
 
 Source Code
 ===========
-See the source code for method [PlanetTool::getPlanetSlashNameByDotName](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L49-L52)
+See the source code for method [PlanetTool::getPlanetSlashNameByDotName](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L50-L53)
 
 
 See Also
