@@ -31,16 +31,25 @@ class DependencyTool
      *
      * Errors are reported in the $errors variable.
      *
+     * Available options are:
+     *
+     * - recursive: bool=true. Set this to false to get only the direct dependencies  (i.e. no recursion).
+     *
+     *
      *
      *
      * @param string $uniDir
      * @param array $planetDotNames
      * @param bool $includeParents
      * @param array $errors
+     * @param array $options
      * @return array
      */
-    public static function getDependencyListRecursiveByUniverseDirPlanets(string $uniDir, array $planetDotNames, bool $includeParents = true, array &$errors = []): array
+    public static function getDependencyListRecursiveByUniverseDirPlanets(string $uniDir, array $planetDotNames, bool $includeParents = true, array &$errors = [], array $options = []): array
     {
+        $recursive = $options['recursive'] ?? true;
+
+
         $ret = [];
         $errors = [];
 
@@ -48,8 +57,14 @@ class DependencyTool
             $ret = $planetDotNames;
         }
 
+
         foreach ($planetDotNames as $planetDotName) {
-            self::collectDependenciesRecursively($ret, $uniDir, $planetDotName, $errors);
+            if (true === $recursive) {
+                self::collectDependenciesRecursively($ret, $uniDir, $planetDotName, $errors);
+            } else {
+                $planetDir = $uniDir . "/" . PlanetTool::getPlanetSlashNameByDotName($planetDotName);
+                $ret = array_merge($ret, self::getDependencyList($planetDir, ['dotNames' => true]));
+            }
         }
         sort($ret);
         return $ret;

@@ -16,7 +16,7 @@ Description
 ================
 
 
-public static [DependencyTool::getDependencyListRecursiveByUniverseDirPlanets](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/DependencyTool/getDependencyListRecursiveByUniverseDirPlanets.md)(string $uniDir, array $planetDotNames, ?bool $includeParents = true, ?array &$errors = []) : array
+public static [DependencyTool::getDependencyListRecursiveByUniverseDirPlanets](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/DependencyTool/getDependencyListRecursiveByUniverseDirPlanets.md)(string $uniDir, array $planetDotNames, ?bool $includeParents = true, ?array &$errors = [], ?array $options = []) : array
 
 
 
@@ -28,6 +28,10 @@ By default, it also includes the given planets in the list. If you just want the
 The planets are searched only in the given universe directory (i.e. not in the web).
 
 Errors are reported in the $errors variable.
+
+Available options are:
+
+- recursive: bool=true. Set this to false to get only the direct dependencies  (i.e. no recursion).
 
 
 
@@ -52,6 +56,10 @@ Parameters
 
     
 
+- options
+
+    
+
 
 Return values
 ================
@@ -67,7 +75,7 @@ Returns array.
 
 Source Code
 ===========
-See the source code for method [DependencyTool::getDependencyListRecursiveByUniverseDirPlanets](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L42-L56)
+See the source code for method [DependencyTool::getDependencyListRecursiveByUniverseDirPlanets](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L48-L71)
 
 
 See Also

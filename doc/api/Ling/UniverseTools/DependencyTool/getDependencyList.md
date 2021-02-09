@@ -107,7 +107,7 @@ array(3) {
 
 Source Code
 ===========
-See the source code for method [DependencyTool::getDependencyList](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L338-L350)
+See the source code for method [DependencyTool::getDependencyList](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L353-L365)
 
 
 See Also

@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2021-01-26
+2019-02-08 -> 2021-02-09
 
 
 
@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.10 -- 2021-02-09
+
+    - update DependencyTool::getDependencyListRecursiveByUniverseDirPlanets, add options argument
+  
 - 1.22.9 -- 2021-01-26
 
     - fix MetaInfoTool::getVersionByUrl using incorrect function to get url
