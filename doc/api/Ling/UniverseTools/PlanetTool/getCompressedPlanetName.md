@@ -51,7 +51,7 @@ Returns string.
 
 Source Code
 ===========
-See the source code for method [PlanetTool::getCompressedPlanetName](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L257-L260)
+See the source code for method [PlanetTool::getCompressedPlanetName](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L262-L265)
 
 
 See Also

@@ -53,7 +53,7 @@ Returns bool.
 
 Source Code
 ===========
-See the source code for method [PlanetTool::exists](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L50-L54)
+See the source code for method [PlanetTool::exists](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L55-L59)
 
 
 See Also

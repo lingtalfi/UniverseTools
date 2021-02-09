@@ -51,7 +51,7 @@ Returns string.
 
 Source Code
 ===========
-See the source code for method [PlanetTool::getTightPlanetName](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L243-L246)
+See the source code for method [PlanetTool::getTightPlanetName](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L248-L251)
 
 
 See Also

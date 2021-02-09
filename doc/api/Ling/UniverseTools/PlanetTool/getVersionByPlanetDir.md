@@ -41,6 +41,11 @@ Return values
 Returns string | null.
 
 
+Exceptions thrown
+================
+
+- [Exception](http://php.net/manual/en/class.exception.php).&nbsp;
+
 
 
 
@@ -49,7 +54,7 @@ Returns string | null.
 
 Source Code
 ===========
-See the source code for method [PlanetTool::getVersionByPlanetDir](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L28-L40)
+See the source code for method [PlanetTool::getVersionByPlanetDir](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L29-L45)
 
 
 See Also

@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.13 -- 2021-02-09
+
+    - remove dependency to Ling.LingTalfi planet
+  
 - 1.22.12 -- 2021-02-09
 
     - add StandardReadmeUtil class

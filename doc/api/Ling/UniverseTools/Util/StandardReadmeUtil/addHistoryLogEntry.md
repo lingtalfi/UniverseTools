@@ -62,7 +62,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [StandardReadmeUtil::addHistoryLogEntry](https://github.com/lingtalfi/UniverseTools/blob/master/Util/StandardReadmeUtil.php#L134-L168)
+See the source code for method [StandardReadmeUtil::addHistoryLogEntry](https://github.com/lingtalfi/UniverseTools/blob/master/Util/StandardReadmeUtil.php#L137-L171)
 
 
 See Also

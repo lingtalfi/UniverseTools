@@ -62,6 +62,5 @@ Dependencies
 - [DirScanner](https://github.com/lingtalfi/DirScanner)
 - [BabyYaml](https://github.com/lingtalfi/BabyYaml)
 - [TokenFun](https://github.com/lingtalfi/TokenFun)
-- [LingTalfi](https://github.com/lingtalfi/LingTalfi)
 
 

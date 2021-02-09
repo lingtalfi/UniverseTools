@@ -16,7 +16,7 @@ Description
 ================
 
 
-public [StandardReadmeUtil::getLatestVersionInfo](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/Util/StandardReadmeUtil/getLatestVersionInfo.md)(string $readMeFile) : array | false
+public [StandardReadmeUtil::getLatestVersionInfo](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/Util/StandardReadmeUtil/getLatestVersionInfo.md)(string $readMeFile, ?array &$errors = []) : array | false
 
 
 
@@ -32,6 +32,9 @@ In case of success, the array has the following structure:
 - 1: text
 
 
+Errors, if any, are put in the errors array.
+
+
 
 
 Parameters
@@ -39,6 +42,10 @@ Parameters
 
 
 - readMeFile
+
+    
+
+- errors
 
     
 
@@ -57,7 +64,7 @@ Returns array | false.
 
 Source Code
 ===========
-See the source code for method [StandardReadmeUtil::getLatestVersionInfo](https://github.com/lingtalfi/UniverseTools/blob/master/Util/StandardReadmeUtil.php#L59-L110)
+See the source code for method [StandardReadmeUtil::getLatestVersionInfo](https://github.com/lingtalfi/UniverseTools/blob/master/Util/StandardReadmeUtil.php#L61-L113)
 
 
 See Also

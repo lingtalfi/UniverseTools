@@ -5,9 +5,9 @@ namespace Ling\UniverseTools;
 
 use Ling\Bat\FileSystemTool;
 use Ling\DirScanner\YorgDirScannerTool;
-use Ling\LingTalfi\Util\ReadmeUtil;
 use Ling\TokenFun\TokenFinder\Tool\TokenFinderTool;
 use Ling\UniverseTools\Exception\UniverseToolsException;
+use Ling\UniverseTools\Util\StandardReadmeUtil;
 
 /**
  * The PlanetTool class.
@@ -24,15 +24,20 @@ class PlanetTool
      *
      * @param string $planetDir
      * @return string|null
+     * @throws \Exception
      */
     public static function getVersionByPlanetDir(string $planetDir)
     {
         $version = MetaInfoTool::getVersion($planetDir);
         if (true === empty($version)) {
-            $ru = new ReadmeUtil();
+            $ru = new StandardReadmeUtil();
             $rf = $planetDir . "/README.md";
             if (file_exists($rf)) {
-                $versionInfo = $ru->getLatestVersionInfo($rf);
+                $errors = [];
+                $versionInfo = $ru->getLatestVersionInfo($rf, $errors);
+                if ($errors) {
+                    throw new UniverseToolsException("Some errors found while parsing the README.md file for the current version: " . implode(PHP_EOL, $errors));
+                }
                 $version = $versionInfo[0];
             }
         }

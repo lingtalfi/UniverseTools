@@ -4,7 +4,7 @@
 namespace Ling\UniverseTools\Util;
 
 use Ling\Bat\FileSystemTool;
-use Ling\LingTalfi\Exception\LingTalfiException;
+use Ling\UniverseTools\Exception\UniverseToolsException;
 use Ling\UniverseTools\MetaInfoTool;
 use Ling\UniverseTools\PlanetTool;
 
@@ -51,12 +51,14 @@ class StandardReadmeUtil
      * - 1: text
      *
      *
+     * Errors, if any, are put in the errors array.
      *
      *
      * @param string $readMeFile
+     * @param array $errors
      * @return array|false
      */
-    public function getLatestVersionInfo(string $readMeFile): array|false
+    public function getLatestVersionInfo(string $readMeFile, array &$errors = []): array|false
     {
         $this->errors = [];
         $ret = false;
@@ -106,6 +108,7 @@ class StandardReadmeUtil
         } else {
             $this->addError("This entry is not a file: $readMeFile.");
         }
+        $errors = $this->errors;
         return $ret;
     }
 
@@ -163,7 +166,7 @@ class StandardReadmeUtil
             ]);
             FileSystemTool::mkfile($readmePath, implode('', $lines));
         } else {
-            throw new LingTalfiException("Didn't find a log entry section for this README file: $readmePath.");
+            throw new UniverseToolsException("Didn't find a log entry section for this README file: $readmePath.");
         }
     }
 
