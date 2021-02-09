@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.14 -- 2021-02-09
+
+    - fix DependencyTool::getDependencyListRecursiveByUniverseDirPlanets returning doublons
+  
 - 1.22.13 -- 2021-02-09
 
     - remove dependency to Ling.LingTalfi planet

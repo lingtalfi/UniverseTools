@@ -49,7 +49,7 @@ Returns array.
 
 Source Code
 ===========
-See the source code for method [DependencyTool::parsePlanetDependencies](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L80-L93)
+See the source code for method [DependencyTool::parsePlanetDependencies](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L83-L96)
 
 
 See Also

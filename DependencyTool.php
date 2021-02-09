@@ -66,6 +66,9 @@ class DependencyTool
                 $ret = array_merge($ret, self::getDependencyList($planetDir, ['dotNames' => true]));
             }
         }
+
+
+        $ret = array_unique($ret);
         sort($ret);
         return $ret;
     }

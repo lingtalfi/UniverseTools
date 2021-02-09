@@ -105,7 +105,7 @@ TokenFun: *
 
 Source Code
 ===========
-See the source code for method [DependencyTool::parseDumpDependencies](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L127-L277)
+See the source code for method [DependencyTool::parseDumpDependencies](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L130-L280)
 
 
 See Also

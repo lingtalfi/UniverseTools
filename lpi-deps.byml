@@ -394,3 +394,9 @@
     - Ling:BabyYaml:1.7.7+
     - Ling:TokenFun:1.11.5+
     - Ling:LingTalfi:1.23.4+
+
+1.22.14: 
+    - Ling:Bat:1.302+
+    - Ling:DirScanner:1.13.3+
+    - Ling:BabyYaml:1.7.7+
+    - Ling:TokenFun:1.11.5+

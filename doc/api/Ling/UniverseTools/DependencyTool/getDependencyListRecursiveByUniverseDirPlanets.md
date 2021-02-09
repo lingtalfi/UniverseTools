@@ -75,7 +75,7 @@ Returns array.
 
 Source Code
 ===========
-See the source code for method [DependencyTool::getDependencyListRecursiveByUniverseDirPlanets](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L48-L71)
+See the source code for method [DependencyTool::getDependencyListRecursiveByUniverseDirPlanets](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L48-L74)
 
 
 See Also
