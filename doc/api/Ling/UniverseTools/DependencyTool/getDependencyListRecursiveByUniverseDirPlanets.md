@@ -7,7 +7,7 @@ DependencyTool::getDependencyListRecursiveByUniverseDirPlanets
 
 
 
-DependencyTool::getDependencyListRecursiveByUniverseDirPlanets — Returns a list of sorted [planet dot names](https://github.com/karayabin/universe-snapshot#the-planet-dot-name) corresponding to all the dependencies of the given planets, recursively.
+DependencyTool::getDependencyListRecursiveByUniverseDirPlanets — Returns a list of sorted [planet dot names](https://github.com/karayabin/universe-snapshot#the-planet-dot-name) corresponding to all the dependencies listed in the dependencies.byml file for the given planets, recursively.
 
 
 
@@ -21,7 +21,7 @@ public static [DependencyTool::getDependencyListRecursiveByUniverseDirPlanets](h
 
 
 
-Returns a list of sorted [planet dot names](https://github.com/karayabin/universe-snapshot#the-planet-dot-name) corresponding to all the dependencies of the given planets, recursively.
+Returns a list of sorted [planet dot names](https://github.com/karayabin/universe-snapshot#the-planet-dot-name) corresponding to all the dependencies listed in the dependencies.byml file for the given planets, recursively.
 
 By default, it also includes the given planets in the list. If you just want the dependencies, set $includeParents=false.
 
@@ -83,5 +83,5 @@ See Also
 
 The [DependencyTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/DependencyTool.md) class.
 
-Next method: [parseDumpDependencies](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/DependencyTool/parseDumpDependencies.md)<br>
+Next method: [parsePlanetDependencies](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/DependencyTool/parsePlanetDependencies.md)<br>
 

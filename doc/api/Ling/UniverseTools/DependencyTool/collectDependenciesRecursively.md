@@ -68,7 +68,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [DependencyTool::collectDependenciesRecursively](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L527-L545)
+See the source code for method [DependencyTool::collectDependenciesRecursively](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L551-L569)
 
 
 See Also

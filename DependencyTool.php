@@ -23,7 +23,7 @@ class DependencyTool
 
 
     /**
-     * Returns a list of sorted @page(planet dot names) corresponding to all the dependencies of the given planets, recursively.
+     * Returns a list of sorted @page(planet dot names) corresponding to all the dependencies listed in the dependencies.byml file for the given planets, recursively.
      *
      * By default, it also includes the given planets in the list. If you just want the dependencies, set $includeParents=false.
      *
@@ -64,6 +64,28 @@ class DependencyTool
             } else {
                 $planetDir = $uniDir . "/" . PlanetTool::getPlanetSlashNameByDotName($planetDotName);
                 $ret = array_merge($ret, self::getDependencyList($planetDir, ['dotNames' => true]));
+            }
+        }
+        sort($ret);
+        return $ret;
+    }
+
+
+    /**
+     * Returns the real planet dependencies by scanning the planet folder.
+     *
+     * @param string $planetDir
+     * @return array
+     */
+    public static function parsePlanetDependencies(string $planetDir): array
+    {
+        $ret = [];
+        $conf = [];
+        self::parseDumpDependencies($planetDir, $conf);
+        $deps = $conf["dependencies"];
+        foreach ($deps as $galaxy => $planetNames) {
+            foreach ($planetNames as $planetName) {
+                $ret[] = $galaxy . "." . $planetName;
             }
         }
         sort($ret);
@@ -240,6 +262,8 @@ class DependencyTool
                     }
                 }
             }
+
+
             $conf = [
                 "dependencies" => $galaxies,
                 "post_install" => $postInstall,

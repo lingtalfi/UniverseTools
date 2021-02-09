@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.11 -- 2021-02-09
+
+    - add DependencyTool::parsePlanetDependencies method
+  
 - 1.22.10 -- 2021-02-09
 
     - update DependencyTool::getDependencyListRecursiveByUniverseDirPlanets, add options argument
