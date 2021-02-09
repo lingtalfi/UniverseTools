@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.12 -- 2021-02-09
+
+    - add StandardReadmeUtil class
+  
 - 1.22.11 -- 2021-02-09
 
     - add DependencyTool::parsePlanetDependencies method
