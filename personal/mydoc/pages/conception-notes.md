@@ -1,6 +1,6 @@
 Conception notes
 ========
-2020-12-08 -> 2021-01-21
+2020-12-08 -> 2021-02-12
 
 
 
@@ -49,5 +49,51 @@ Then when you import the **Ling/ABC** planet into the app, the app will look lik
     - universe/Ling/ABC/
     - config/abc.byml
     - www/templates/abc.html
+
+
+
+
+Machine universe
+===========
+2021-02-12
+
+A planet is generally used in the context of an app.
+
+However, some planets require working in the context of the hosting machine (i.e. your computer).
+
+We provide the **machine universe** concept, which is a directory inside which such planets can store
+their host sensitive configuration/assets.
+
+The **machine universe** directory is by default **/usr/local/share/universe**.
+
+It can be changed by setting its value in the **/usr/local/share/universe/Ling/UniverseTools/machine-universe-path.txt** file.
+
+This file's location is not customizable.
+
+So again, by default we have **$machineUniversePath** = **/usr/local/share/universe**.
+
+
+Now that we have a **$machineUniversePath** variable, planets which need host-sensitive conf/assets can store
+their things in the **$machineUniversePath/$galaxy/$planet** directory.
+
+Using this convention improves the general organization of universe related files.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

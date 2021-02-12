@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2021-02-09
+2019-02-08 -> 2021-02-12
 
 
 
@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.15 -- 2021-02-12
+
+    - add MachineUniverseTool class and machine universe concept
+  
 - 1.22.14 -- 2021-02-09
 
     - fix DependencyTool::getDependencyListRecursiveByUniverseDirPlanets returning doublons

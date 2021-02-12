@@ -4,7 +4,7 @@
 
 The MetaInfoTool class
 ================
-2019-02-26 --> 2021-02-09
+2019-02-26 --> 2021-02-12
 
 
 
@@ -62,4 +62,4 @@ See the source code of [Ling\UniverseTools\MetaInfoTool](https://github.com/ling
 
 SeeAlso
 ==============
-Previous class: [GalaxyTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/GalaxyTool.md)<br>Next class: [PlanetTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool.md)<br>
+Previous class: [MachineUniverseTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/MachineUniverseTool.md)<br>Next class: [PlanetTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/PlanetTool.md)<br>
