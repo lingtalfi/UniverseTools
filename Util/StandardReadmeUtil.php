@@ -184,17 +184,33 @@ class StandardReadmeUtil
     public function addCommitMessageByUniverseDir(string $universeDir, string $message)
     {
         $planetDirs = PlanetTool::getPlanetDirs($universeDir);
-        $date = date("Y-m-d");
         foreach ($planetDirs as $planetDir) {
-            $lastVersion = MetaInfoTool::getVersion($planetDir);
-            $p = explode(".", $lastVersion);
-            $lastComponent = (int)array_pop($p);
-            $lastComponent++;
-            $p[] = $lastComponent;
-            $version = implode('.', $p);
-            $readmePath = $planetDir . "/README.md";
-            $this->addHistoryLogEntry($readmePath, $version, $date, $message);
+            $this->addCommitMessageByPlanetDir($planetDir, $message);
         }
+    }
+
+
+    /**
+     * Adds a commit message to the history log section of the README files for the given planet..
+     * The version number is incremented from the last version found, using a minor version number increment.
+     * The date is set to the current date.
+     *
+     *
+     *
+     * @param string $planetDir
+     * @param string $message
+     */
+    public function addCommitMessageByPlanetDir(string $planetDir, string $message)
+    {
+        $date = date("Y-m-d");
+        $lastVersion = MetaInfoTool::getVersion($planetDir);
+        $p = explode(".", $lastVersion);
+        $lastComponent = (int)array_pop($p);
+        $lastComponent++;
+        $p[] = $lastComponent;
+        $version = implode('.', $p);
+        $readmePath = $planetDir . "/README.md";
+        $this->addHistoryLogEntry($readmePath, $version, $date, $message);
     }
 
 

@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.16 -- 2021-02-12
+
+    - add StandardReadmeUtil->addCommitMessageByPlanetDir method
+  
 - 1.22.15 -- 2021-02-12
 
     - add MachineUniverseTool class and machine universe concept
