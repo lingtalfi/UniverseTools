@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2021-02-12
+2019-02-08 -> 2021-02-15
 
 
 
@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.17 -- 2021-02-15
+
+    - add MetaInfoTool::incrementVersion method
+  
 - 1.22.16 -- 2021-02-12
 
     - add StandardReadmeUtil->addCommitMessageByPlanetDir method
