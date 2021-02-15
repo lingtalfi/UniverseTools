@@ -111,10 +111,11 @@ class MetaInfoTool
         $arr = [];
         if (true === is_file($metaFile)) {
             $arr = BabyYamlUtil::readFile($metaFile);
-            $currentVersion = $info['version'] ?? $defaultVersion;
+            $currentVersion = $arr['version'] ?? $defaultVersion;
         } else {
             $currentVersion = $defaultVersion;
         }
+
 
 
         $p = explode(".", $currentVersion);
@@ -122,6 +123,7 @@ class MetaInfoTool
         $p[] = ++$lastComponent;
         $newVersion = implode('.', $p);
         $arr['version'] = $newVersion;
+
         BabyYamlUtil::writeFile($arr, $metaFile);
         return $newVersion;
     }

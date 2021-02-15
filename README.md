@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.18 -- 2021-02-15
+
+    - fix MetaInfoTool::incrementVersion functional typo
+  
 - 1.22.17 -- 2021-02-15
 
     - add MetaInfoTool::incrementVersion method
