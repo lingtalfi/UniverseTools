@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.19 -- 2021-02-15
+
+    - fix MetaInfoTool::incrementVersion unexpectedly reverting back to 1.22.16
+  
 - 1.22.18 -- 2021-02-15
 
     - fix MetaInfoTool::incrementVersion functional typo

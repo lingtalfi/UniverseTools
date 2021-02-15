@@ -185,7 +185,7 @@ class StandardReadmeUtil
     {
         $planetDirs = PlanetTool::getPlanetDirs($universeDir);
         foreach ($planetDirs as $planetDir) {
-            $this->addCommitMessageByPlanetDir($planetDir, $message, ['increment' => true]);
+            $this->addCommitMessageByPlanetDir($planetDir, $message);
         }
     }
 
@@ -195,35 +195,20 @@ class StandardReadmeUtil
      * The version number is incremented from the last version found, using a minor version number increment.
      * The date is set to the current date.
      *
-     * Available options are:
-     *
-     * - increment: bool=false, whether to increment the version number.
-     *
-     *
      *
      *
      * @param string $planetDir
      * @param string $message
-     * @param array $options
      */
-    public function addCommitMessageByPlanetDir(string $planetDir, string $message, array $options = [])
+    public function addCommitMessageByPlanetDir(string $planetDir, string $message)
     {
-
-        $increment = $options['increment'] ?? false;
-
         $date = date("Y-m-d");
         $lastVersion = MetaInfoTool::getVersion($planetDir);
-
-        if (true === $increment) {
-            $p = explode(".", $lastVersion);
-            $lastComponent = (int)array_pop($p);
-            $lastComponent++;
-            $p[] = $lastComponent;
-            $version = implode('.', $p);
-        } else {
-            $version = $lastVersion;
-        }
-
+        $p = explode(".", $lastVersion);
+        $lastComponent = (int)array_pop($p);
+        $lastComponent++;
+        $p[] = $lastComponent;
+        $version = implode('.', $p);
         $readmePath = $planetDir . "/README.md";
         $this->addHistoryLogEntry($readmePath, $version, $date, $message);
     }

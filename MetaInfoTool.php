@@ -92,6 +92,7 @@ class MetaInfoTool
     }
 
 
+
     /**
      * Increments the version number found in the meta-info.byml file, and returns that number.
      * The file is created if necessary.
@@ -127,6 +128,9 @@ class MetaInfoTool
         BabyYamlUtil::writeFile($arr, $metaFile);
         return $newVersion;
     }
+
+
+
 
     /**
      * Writes the given meta $info to the meta-info.byml file of the given $planetDir.
