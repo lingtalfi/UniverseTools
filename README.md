@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2021-02-15
+2019-02-08 -> 2021-02-16
 
 
 
@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.21 -- 2021-02-16
+
+    - DependencyTool::parseDumpDependencies now sorts the planets alphabetically
+  
 - 1.22.20 -- 2021-02-15
 
     - fix commit issues

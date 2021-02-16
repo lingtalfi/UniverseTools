@@ -267,6 +267,14 @@ class DependencyTool
             }
 
 
+            //--------------------------------------------
+            // SORTING
+            //--------------------------------------------
+            foreach ($galaxies as $galaxy => $planets) {
+                sort($planets);
+                $galaxies[$galaxy] = $planets;
+            }
+
             $conf = [
                 "dependencies" => $galaxies,
                 "post_install" => $postInstall,
