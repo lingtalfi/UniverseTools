@@ -239,6 +239,19 @@ class PlanetTool
 
 
     /**
+     * Returns the planet dot name from the given planet dir.
+     *
+     * @param string $planetDir
+     * @return string
+     */
+    public static function getPlanetDotNameByPlanetDir(string $planetDir): string
+    {
+        list($galaxy, $planet) = PlanetTool::getGalaxyNamePlanetNameByDir($planetDir);
+        return $galaxy . "." . $planet;
+    }
+
+
+    /**
      * Returns the @page(tight planet name) for a given planet.
      *
      * Note: it's the same as the getCompressedPlanetName method.

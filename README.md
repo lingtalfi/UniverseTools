@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.23 -- 2021-02-18
+
+    - add PlanetTool::getPlanetDotNameByPlanetDir method
+  
 - 1.22.22 -- 2021-02-18
 
     - add "local universe" concept and tools
