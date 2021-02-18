@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2021-02-16
+2019-02-08 -> 2021-02-18
 
 
 
@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.22 -- 2021-02-18
+
+    - add "local universe" concept and tools
+  
 - 1.22.21 -- 2021-02-16
 
     - DependencyTool::parseDumpDependencies now sorts the planets alphabetically

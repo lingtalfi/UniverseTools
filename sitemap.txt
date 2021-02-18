@@ -16,6 +16,9 @@ https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTool
 https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/Exception/UniverseToolsException.md
 https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/GalaxyTool/getKnownGalaxies.md
 https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/GalaxyTool.md
+https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/LocalUniverseTool/getLocalUniversePath.md
+https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/LocalUniverseTool/getPlanetDir.md
+https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/LocalUniverseTool.md
 https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/MachineUniverseTool/getMachineUniversePath.md
 https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/MachineUniverseTool.md
 https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/MetaInfoTool/getVersion.md

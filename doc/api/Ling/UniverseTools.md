@@ -1,6 +1,6 @@
 Ling/UniverseTools
 ================
-2019-02-26 --> 2021-02-16
+2019-02-26 --> 2021-02-18
 
 
 
@@ -24,6 +24,9 @@ Table of contents
 - [UniverseToolsException](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/Exception/UniverseToolsException.md) &ndash; The base exception class for the UniverseTools planet.
 - [GalaxyTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/GalaxyTool.md) &ndash; The GalaxyTool class.
     - [GalaxyTool::getKnownGalaxies](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/GalaxyTool/getKnownGalaxies.md) &ndash; Returns the array of known galaxies.
+- [LocalUniverseTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/LocalUniverseTool.md) &ndash; The LocalUniverseTool class.
+    - [LocalUniverseTool::getLocalUniversePath](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/LocalUniverseTool/getLocalUniversePath.md) &ndash; Returns the path to the [local universe](https://github.com/lingtalfi/UniverseTools/blob/master/doc/pages/conception-notes.md#local-universe).
+    - [LocalUniverseTool::getPlanetDir](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/LocalUniverseTool/getPlanetDir.md) &ndash; Returns the path to the local universe planet dir if it exists, or null otherwise.
 - [MachineUniverseTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/MachineUniverseTool.md) &ndash; The MachineUniverseTool class.
     - [MachineUniverseTool::getMachineUniversePath](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/MachineUniverseTool/getMachineUniversePath.md) &ndash; Returns the path to the [machine universe path](https://github.com/lingtalfi/UniverseTools/blob/master/doc/pages/conception-notes.md#machine-universe).
 - [MetaInfoTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/MetaInfoTool.md) &ndash; The MetaInfoTool class.
