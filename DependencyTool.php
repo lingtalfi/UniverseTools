@@ -394,9 +394,11 @@ class DependencyTool
 
 
         $dependencyFile = $planetDir . "/dependencies.byml";
-        return self::getDependencyListByFile($dependencyFile, [
+        $deps = self::getDependencyListByFile($dependencyFile, [
             'dotNames' => $dotNames,
         ]);
+        sort($deps);
+        return $deps;
     }
 
 

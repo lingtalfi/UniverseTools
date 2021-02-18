@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.24 -- 2021-02-18
+
+    - update DependencyTool::getDependencyList, now sorts the planets alphabetically
+  
 - 1.22.23 -- 2021-02-18
 
     - add PlanetTool::getPlanetDotNameByPlanetDir method
