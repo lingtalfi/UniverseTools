@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.27 -- 2021-02-23
+
+    - fix PlanetTool::importPlanetByExternalDir, didn't remove dir before creating symlink
+
 - 1.22.26 -- 2021-02-23
 
     - update PlanetTool::importPlanetByExternalDir, add symlinks option

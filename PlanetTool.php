@@ -419,6 +419,9 @@ class PlanetTool
             $localDir = LocalUniverseTool::getPlanetDir($planetDot);
             if (true === is_dir($localDir)) {
                 $symlinked = true;
+                if (is_dir($newPlanetDir)) {
+                    FileSystemTool::remove($newPlanetDir);
+                }
                 FileSystemTool::mkdir(dirname($newPlanetDir));
                 symlink($localDir, $newPlanetDir);
             }
