@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.26 -- 2021-02-23
+
+    - update PlanetTool::importPlanetByExternalDir, add symlinks option
+  
 - 1.22.25 -- 2021-02-23
 
     - add PlanetTool::getPlanetDotNames method

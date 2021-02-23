@@ -389,6 +389,8 @@ class PlanetTool
      *
      * Available options are:
      * - assets: bool=false, if true, the assets/map will be copied to the application.
+     * - symlinks: bool=false, if true, symlinks to the local universe will be created (if available) instead of copying
+     *      the whole planet dirs.
      *
      * See more details in the @page(import install discussion).
      *
@@ -400,6 +402,7 @@ class PlanetTool
     public static function importPlanetByExternalDir(string $planetDot, string $extPlanetDir, string $appDir, array $options = [])
     {
         $assets = $options['assets'] ?? false;
+        $symlinks = $options['symlinks'] ?? false;
 
 
         list($galaxy, $planet) = self::extractPlanetDotName($planetDot);
@@ -411,7 +414,19 @@ class PlanetTool
         }
 
         $newPlanetDir = $appDir . "/universe/$galaxy/$planet";
-        FileSystemTool::copyDir($extPlanetDir, $newPlanetDir);
+        $symlinked = false;
+        if (true === $symlinks) {
+            $localDir = LocalUniverseTool::getPlanetDir($planetDot);
+            if (true === is_dir($localDir)) {
+                $symlinked = true;
+                FileSystemTool::mkdir(dirname($newPlanetDir));
+                symlink($localDir, $newPlanetDir);
+            }
+        }
+
+        if (false === $symlinked) {
+            FileSystemTool::copyDir($extPlanetDir, $newPlanetDir);
+        }
 
 
         if (true === $assets) {
