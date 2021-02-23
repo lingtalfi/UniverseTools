@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2021-02-18
+2019-02-08 -> 2021-02-23
 
 
 
@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.25 -- 2021-02-23
+
+    - add PlanetTool::getPlanetDotNames method
+  
 - 1.22.24 -- 2021-02-18
 
     - update DependencyTool::getDependencyList, now sorts the planets alphabetically

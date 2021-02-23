@@ -55,7 +55,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [PlanetTool::installAssetsByPlanetDotName](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L416-L423)
+See the source code for method [PlanetTool::installAssetsByPlanetDotName](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L434-L441)
 
 
 See Also

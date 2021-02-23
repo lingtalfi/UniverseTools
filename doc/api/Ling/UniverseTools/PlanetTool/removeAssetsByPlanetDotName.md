@@ -55,7 +55,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [PlanetTool::removeAssetsByPlanetDotName](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L434-L441)
+See the source code for method [PlanetTool::removeAssetsByPlanetDotName](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L452-L459)
 
 
 See Also

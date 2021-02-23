@@ -220,6 +220,24 @@ class PlanetTool
 
 
     /**
+     * Returns the array of planet dot names found in the given universe directory.
+     *
+     * @param string $uniDir
+     * @return array
+     * @throws \Exception
+     */
+    public static function getPlanetDotNames(string $uniDir): array
+    {
+        $ret = [];
+        $pdirs = self::getPlanetDirs($uniDir);
+        foreach ($pdirs as $pdir) {
+            $ret[] = self::getPlanetDotNameByPlanetDir($pdir);
+        }
+        return $ret;
+    }
+
+
+    /**
      * Returns an array containing the galaxy name and the short planet name extracted from the given $planetDir.
      * Returns false if the given $planetDir is not valid.
      *

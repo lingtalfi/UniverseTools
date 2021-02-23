@@ -67,7 +67,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [PlanetTool::importPlanetByExternalDir](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L382-L405)
+See the source code for method [PlanetTool::importPlanetByExternalDir](https://github.com/lingtalfi/UniverseTools/blob/master/PlanetTool.php#L400-L423)
 
 
 See Also
