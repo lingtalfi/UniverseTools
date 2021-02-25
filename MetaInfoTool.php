@@ -75,7 +75,7 @@ class MetaInfoTool
      * @param string $planetDir
      * @return string|null
      */
-    public static function getVersion(string $planetDir)
+    public static function getVersion(string $planetDir): ?string
     {
         $ret = null;
         if (is_dir($planetDir)) {
@@ -88,9 +88,8 @@ class MetaInfoTool
                 }
             }
         }
-        return (string)$ret;
+        return ((string)$ret);
     }
-
 
 
     /**
@@ -118,7 +117,6 @@ class MetaInfoTool
         }
 
 
-
         $p = explode(".", $currentVersion);
         $lastComponent = array_pop($p);
         $p[] = ++$lastComponent;
@@ -128,8 +126,6 @@ class MetaInfoTool
         BabyYamlUtil::writeFile($arr, $metaFile);
         return $newVersion;
     }
-
-
 
 
     /**

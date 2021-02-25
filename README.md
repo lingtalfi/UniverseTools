@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.29 -- 2021-02-25
+
+    - update MetaInfoTool::getVersion make sure it returns a string
+  
 - 1.22.28 -- 2021-02-25
 
     - add AssetsMapTool getAssets and getAssetMapDirByPlanetDir methods
