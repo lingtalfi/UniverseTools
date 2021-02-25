@@ -1,5 +1,7 @@
 https://github.com/lingtalfi/UniverseTools/blob/master/README.md
 https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/AssetsMapTool/copyAssets.md
+https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/AssetsMapTool/getAssetMapDirByPlanetDir.md
+https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/AssetsMapTool/getAssets.md
 https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/AssetsMapTool/removeAssets.md
 https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/AssetsMapTool.md
 https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/DependencyTool/collectDependenciesRecursively.md

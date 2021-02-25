@@ -1,6 +1,6 @@
 Ling/UniverseTools
 ================
-2019-02-26 --> 2021-02-23
+2019-02-26 --> 2021-02-25
 
 
 
@@ -11,6 +11,8 @@ Table of contents
 - [AssetsMapTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/AssetsMapTool.md) &ndash; The AssetsMapTool class.
     - [AssetsMapTool::copyAssets](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/AssetsMapTool/copyAssets.md) &ndash; Copies all the asset files found in the given assetsMap directory into the target application dir.
     - [AssetsMapTool::removeAssets](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/AssetsMapTool/removeAssets.md) &ndash; Removes the assets files ("defined" in the assetsMapDir) from the target app dir.
+    - [AssetsMapTool::getAssets](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/AssetsMapTool/getAssets.md) &ndash; Returns the list of files found in the given asset/map directory.
+    - [AssetsMapTool::getAssetMapDirByPlanetDir](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/AssetsMapTool/getAssetMapDirByPlanetDir.md) &ndash; Returns the path to the asset/map directory.
 - [DependencyTool](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/DependencyTool.md) &ndash; The DependencyTool class.
     - [DependencyTool::getDependencyListRecursiveByUniverseDirPlanets](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/DependencyTool/getDependencyListRecursiveByUniverseDirPlanets.md) &ndash; Returns a list of sorted [planet dot names](https://github.com/karayabin/universe-snapshot#the-planet-dot-name) corresponding to all the dependencies listed in the dependencies.byml file for the given planets, recursively.
     - [DependencyTool::parsePlanetDependencies](https://github.com/lingtalfi/UniverseTools/blob/master/doc/api/Ling/UniverseTools/DependencyTool/parsePlanetDependencies.md) &ndash; Returns the real planet dependencies by scanning the planet folder.

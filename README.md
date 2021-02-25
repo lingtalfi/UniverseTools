@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2021-02-23
+2019-02-08 -> 2021-02-25
 
 
 
@@ -38,6 +38,10 @@ Summary
 History Log
 ==============
 
+- 1.22.28 -- 2021-02-25
+
+    - add AssetsMapTool getAssets and getAssetMapDirByPlanetDir methods
+  
 - 1.22.27 -- 2021-02-23
 
     - fix PlanetTool::importPlanetByExternalDir, didn't remove dir before creating symlink
