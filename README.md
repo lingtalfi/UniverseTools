@@ -43,6 +43,10 @@ Summary
 History Log
 ==============
 
+- 1.22.31 -- 2021-03-05
+
+    - add StandardReadmeUtil->updateDate method
+  
 - 1.22.30 -- 2021-03-05
 
     - update README.md, add install alternative
