@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2021-02-25
+2019-02-08 -> 2021-03-05
 
 
 
@@ -12,6 +12,11 @@ This is part of the [universe framework](https://github.com/karayabin/universe-s
 
 Install
 ==========
+Using the [planet installer](https://github.com/lingtalfi/Light_PlanetInstaller) via [light-cli](https://github.com/lingtalfi/Light_Cli)
+```bash
+lt install Ling.UniverseTools
+```
+
 Using the [uni](https://github.com/lingtalfi/universe-naive-importer) command.
 ```bash
 uni import Ling/UniverseTools
@@ -37,6 +42,10 @@ Summary
 
 History Log
 ==============
+
+- 1.22.30 -- 2021-03-05
+
+    - update README.md, add install alternative
 
 - 1.22.29 -- 2021-02-25
 
