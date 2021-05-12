@@ -43,6 +43,10 @@ Summary
 History Log
 ==============
 
+- 1.22.35 -- 2021-05-12
+
+  - update MetaInfoTool::getVersion now returns null|string (will conflict with 1.22.29, but I don't remember why I did that so...)
+
 - 1.22.34 -- 2021-05-12
 
     - add BangTool

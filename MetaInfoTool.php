@@ -72,6 +72,7 @@ class MetaInfoTool
     /**
      * Returns the version number associated with the given planetDir, if found in the meta-info file.
      * If not, null is returned.
+     *
      * @param string $planetDir
      * @return string|null
      */
@@ -83,12 +84,9 @@ class MetaInfoTool
             if (is_file($metaFile)) {
                 $info = BabyYamlUtil::readFile($metaFile);
                 $ret = $info['version'] ?? null;
-                if (null === $ret) {
-                    return $ret;
-                }
             }
         }
-        return ((string)$ret);
+        return $ret;
     }
 
 
