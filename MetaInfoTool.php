@@ -65,7 +65,11 @@ class MetaInfoTool
             return null;
         }
         $info = BabyYamlUtil::readBabyYamlString($content);
-        return $info['version'] ?? null;
+        $version = $info['version'] ?? null;
+        if (true === is_float($version)) { // might happen with versions with one decimal only, like 1.245 (see Bat)
+            $version = (string)$version;
+        }
+        return $version;
     }
 
 

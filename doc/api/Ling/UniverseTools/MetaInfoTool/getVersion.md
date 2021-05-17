@@ -50,7 +50,7 @@ Returns string | null.
 
 Source Code
 ===========
-See the source code for method [MetaInfoTool::getVersion](https://github.com/lingtalfi/UniverseTools/blob/master/MetaInfoTool.php#L79-L90)
+See the source code for method [MetaInfoTool::getVersion](https://github.com/lingtalfi/UniverseTools/blob/master/MetaInfoTool.php#L83-L94)
 
 
 See Also

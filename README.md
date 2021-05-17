@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2021-05-12
+2019-02-08 -> 2021-05-17
 
 
 
@@ -43,6 +43,10 @@ Summary
 History Log
 ==============
 
+- 1.22.37 -- 2021-05-17
+
+  - fix MetaInfoTool::getVersion, now converts floats into strings explicitly
+  
 - 1.22.36 -- 2021-05-12
 
   - fix BangTool::bang method incorrect asset paths
