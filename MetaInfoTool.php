@@ -25,19 +25,30 @@ class MetaInfoTool
      *
      * If no info is found (meta-info file not found for instance), the returned array will be empty.
      *
+     * Available options are:
+     *
+     * - numbersAsString: bool=true. Whether to convert numbers (int and float) to strings.
+     *      This option is set to true by default, because some planets like Bat use a version number with two components only instead of three (i.e. 1.24, 1.25, ...).
+     *      The float to string conversion in php can lead to errors, such as version 1.320 interpreted as 1.32, which is unacceptable.
+     *      Since the meta-info.byml mainly contains the version information, it makes sense to have the numbersAsString set to true by default,
+     *      so that 1.320 becomes string 1.320 instead of float 1.32.
+     *
+     *
      *
      *
      *
      * @param string $planetDir
+     * @param array $options
      * @return array
      */
-    public static function parseInfo(string $planetDir): array
+    public static function parseInfo(string $planetDir, array $options = []): array
     {
+        $numbersAsString = $options['numbersAsString'] ?? true;
         $ret = [];
         if (is_dir($planetDir)) {
             $metaFile = $planetDir . "/meta-info.byml";
             if (is_file($metaFile)) {
-                return BabyYamlUtil::readFile($metaFile);
+                return BabyYamlUtil::readFile($metaFile, ['numbersAsString' => $numbersAsString]);
             }
         }
         return $ret;
@@ -64,7 +75,7 @@ class MetaInfoTool
         if (false === $content) {
             return null;
         }
-        $info = BabyYamlUtil::readBabyYamlString($content);
+        $info = BabyYamlUtil::readBabyYamlString($content, ['numbersAsString' => true]);
         $version = $info['version'] ?? null;
         if (true === is_float($version)) { // might happen with versions with one decimal only, like 1.245 (see Bat)
             $version = (string)$version;
@@ -86,7 +97,7 @@ class MetaInfoTool
         if (is_dir($planetDir)) {
             $metaFile = $planetDir . "/meta-info.byml";
             if (is_file($metaFile)) {
-                $info = BabyYamlUtil::readFile($metaFile);
+                $info = BabyYamlUtil::readFile($metaFile, ["numbersAsString" => true]);
                 $ret = $info['version'] ?? null;
             }
         }
@@ -112,7 +123,7 @@ class MetaInfoTool
         $defaultVersion = "0.1.0";
         $arr = [];
         if (true === is_file($metaFile)) {
-            $arr = BabyYamlUtil::readFile($metaFile);
+            $arr = BabyYamlUtil::readFile($metaFile, ['numbersAsString' => true]);
             $currentVersion = $arr['version'] ?? $defaultVersion;
         } else {
             $currentVersion = $defaultVersion;
