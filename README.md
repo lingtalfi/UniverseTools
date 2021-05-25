@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2021-05-21
+2019-02-08 -> 2021-05-25
 
 
 
@@ -43,6 +43,10 @@ Summary
 History Log
 ==============
 
+- 1.22.39 -- 2021-05-25
+
+  - update bigbang script 
+  
 - 1.22.38 -- 2021-05-21
 
   - fix MetaInfoTool potentially returning version as a float instead of a string 

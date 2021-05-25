@@ -25,9 +25,9 @@ class BangTool
      */
     public static function bang(string $universeDir)
     {
-        $bigBangSrc = __DIR__ . '/assets/universe-basic-2021-05-03/bigbang.php';
+        $bigBangSrc = __DIR__ . '/assets/universe-basic-2021-05-25/bigbang.php';
         $bigBangDst = $universeDir . "/bigbang.php";
-        $bumbleBeeSrc = __DIR__ . '/assets/universe-basic-2021-05-03/BumbleBee';
+        $bumbleBeeSrc = __DIR__ . '/assets/universe-basic-2021-05-25/BumbleBee';
         $bumbleBeeDst = $universeDir . '/Ling/BumbleBee';
 
         if (false === is_file($bigBangDst)) {
