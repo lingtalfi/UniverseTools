@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2021-05-25
+2019-02-08 -> 2021-05-28
 
 
 
@@ -43,6 +43,10 @@ Summary
 History Log
 ==============
 
+- 1.22.40 -- 2021-05-28
+
+  - add PlanetTool::getPlanetDotNamesByWorkingDir method 
+  
 - 1.22.39 -- 2021-05-25
 
   - update bigbang script 
