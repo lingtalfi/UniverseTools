@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2021-05-28
+2019-02-08 -> 2021-06-15
 
 
 
@@ -43,6 +43,10 @@ Summary
 History Log
 ==============
 
+- 1.22.42 -- 2021-06-15
+
+    - add StandardReadmeUtil->getPlanetsToCommitListByAppDir method
+  
 - 1.22.41 -- 2021-05-31
 
     - Removing trailing plus in lpi-deps file (to work with Light_PlanetInstaller:2.0.0 api
