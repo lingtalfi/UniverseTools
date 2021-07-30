@@ -49,7 +49,7 @@ Returns array.
 
 Source Code
 ===========
-See the source code for method [DependencyTool::getDependencyArray](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L371-L379)
+See the source code for method [DependencyTool::getDependencyArray](https://github.com/lingtalfi/UniverseTools/blob/master/DependencyTool.php#L372-L380)
 
 
 See Also

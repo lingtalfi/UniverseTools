@@ -119,6 +119,7 @@ class DependencyTool
      * A reference to the configuration array created, which has the following structure:
      * - dependencies: array of galaxyName => planets (list of planet names)
      * - post_install: the given $postInstall array
+     * - ...other properties might be added.
      *
      * @param array $postInstall
      * @param array $options
@@ -275,10 +276,10 @@ class DependencyTool
                 $galaxies[$galaxy] = $planets;
             }
 
-            $conf = [
-                "dependencies" => $galaxies,
-                "post_install" => $postInstall,
-            ];
+            $conf['dependencies'] = $galaxies;
+            $conf['post_install'] = $postInstall;
+
+
             return BabyYamlUtil::getBabyYamlString($conf) . PHP_EOL;
 
 

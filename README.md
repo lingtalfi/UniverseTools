@@ -43,6 +43,10 @@ Summary
 History Log
 ==============
 
+- 1.22.44 -- 2021-07-30
+
+    - fix DependencyTool::parseDumpDependencies not preserving existing conf array 
+
 - 1.22.43 -- 2021-07-30
 
     - add DependencyTool::getDependencyArray method
