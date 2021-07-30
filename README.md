@@ -1,6 +1,6 @@
 UniverseTools
 ===========
-2019-02-08 -> 2021-06-15
+2019-02-08 -> 2021-07-30
 
 
 
@@ -42,6 +42,10 @@ Summary
 
 History Log
 ==============
+
+- 1.22.43 -- 2021-07-30
+
+    - add DependencyTool::getDependencyArray method
 
 - 1.22.42 -- 2021-06-15
 

@@ -363,6 +363,23 @@ class DependencyTool
 
 
     /**
+     * Returns the array contained in the dependencies.byml file if found, or an empty array otherwise.
+     *
+     * @param string $planetDir
+     * @return array
+     */
+    public static function getDependencyArray(string $planetDir): array
+    {
+        $ret = [];
+        $dependencyFile = $planetDir . "/dependencies.byml";
+        if (file_exists($dependencyFile)) {
+            $ret = BabyYamlUtil::readFile($dependencyFile);
+        }
+        return $ret;
+    }
+
+
+    /**
      * Parses the dependencies.byml file (at the root of the given $planetDir) if it exists,
      * and return an array of all dependencies found in it.
      *
@@ -517,6 +534,7 @@ class DependencyTool
      * Available options are:
      * - ignoreFilesStartingWith: array of prefixes to look for. If a prefix matches the beginning of a (relative) file path (relative to the planet root dir),
      *          then the file is excluded.
+     *
      *
      * @param string $planetDir
      * @param array $postInstall
